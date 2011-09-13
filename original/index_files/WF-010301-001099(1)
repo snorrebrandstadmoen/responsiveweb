@@ -18,49 +18,49 @@
 
 @font-face{
 	font-family:"Fedra Serif Screen Regular";
-	src:url("https://d1c2c5je6wktky.cloudfront.net/WF-010301-001099-000445.woff?Expires=1315861448&Key-Pair-Id=APKAJTRIQPE4Z6KCMOEA&Signature=F~XFofJ8-iJEV9MCDfE3DZsZ1C0e2ZEPjGTBJtD8aEgFTIWly44LjWuA~~8oo7lqLEy2givm4Phl~a8Po~QgRp2xmEu8nheoay6EbUWuWgsMt9C2DRfmTArgkyRWVmU~G3Dj49vJ1NFnWyv0xUSrpnoZqOT9w4EhT6UhkqAMRjA_") format("woff");
+	src:url("https://d1c2c5je6wktky.cloudfront.net/WF-010301-001099-000445.woff?Expires=1315924685&Key-Pair-Id=APKAJTRIQPE4Z6KCMOEA&Signature=Ypq468sVbDczGj9Eel4xE3HzHOnHNRegc2a2hhKn-epj0JSura1m~HBsuYCVfTA2YDAxs6UShUF8YEpyxbEikKgBrIC4jNUNMScoauVZSfJFQQX0gMSu~DIn9ELlMVM9YMyxZiovue4OtLQMVD71U~~ci7zdnTtOVDIQV-DBjbs_") format("woff");
 font-style: normal;
 font-weight: normal;
 font-stretch: normal;}
 @font-face{
 	font-family:"Fedra Serif Screen Italic";
-	src:url("https://d1c2c5je6wktky.cloudfront.net/WF-010301-001099-000446.woff?Expires=1315861448&Key-Pair-Id=APKAJTRIQPE4Z6KCMOEA&Signature=X1z5n3lrUKwvotTQtziqoGj4acDZhWO9iSilHLiK6zcLzREmB~MgF2UvycWDRp-U0qgJ5bEOPblrYX1HfoT3RphhOz3UwSqKOMA29Ol-E2-UHmokDxyhAXTRe7Xc6aA-zfCbeXtxNfxv0t-n29zE0gnLDpxsIwemReiLINlDWOM_") format("woff");
+	src:url("https://d1c2c5je6wktky.cloudfront.net/WF-010301-001099-000446.woff?Expires=1315924685&Key-Pair-Id=APKAJTRIQPE4Z6KCMOEA&Signature=cb-rKa-B-HmymJ6cXHEjhpdwg0i3VX5yeWGkh2IgyUWQnrbqCah79kb3d8lhxgQrmvEYCTmyJTv5XX-~IxByNNjzJc1ySgo6d1qOlYBTcqLjlJiXlLSOtJ1b1Fqo~4c9j-a1fdkQDVVLwF6NTnqYlAPeHtaL1DKaGc1~5r~GPmk_") format("woff");
 font-style: italic;
 font-weight: normal;
 font-stretch: normal;}
 @font-face{
 	font-family:"Fedra Serif Screen Bold";
-	src:url("https://d1c2c5je6wktky.cloudfront.net/WF-010301-001099-000447.woff?Expires=1315861448&Key-Pair-Id=APKAJTRIQPE4Z6KCMOEA&Signature=WEOejE2DTovAUsq3O30UVwBS9MJBpDCda0xUsMG7gtVVzQv7icrCRNimgMqNUYRwOPSDvqYxHSBs7TIqmSGt62IH8HFDn3PH71E9Nj4KB6QUGh6moa2udMzDLLhHTWnc71hICLQgCLyob2Q~I0Xr68hXZ4bq77ZRmNn3xG5GkwU_") format("woff");
+	src:url("https://d1c2c5je6wktky.cloudfront.net/WF-010301-001099-000447.woff?Expires=1315924685&Key-Pair-Id=APKAJTRIQPE4Z6KCMOEA&Signature=dGxAyawX~rf72Qn9y-UzzMmOW-JSVOULrdrMq-iiPOdt3JAU8KM7qYpkRimsXwqHYhKN-yQHuakuO4NPT03fAm68UPDuPcsqmrzcPgfMcpwS9rB0xmJGFHyzzTk-mjnsbjET7VtiGZvAdFH2UkUkYtIEmoW-7EY8muJehFTiGAw_") format("woff");
 font-style: normal;
 font-weight: bold;
 font-stretch: normal;}
 @font-face{
 	font-family:"Fedra Serif Screen Bold Italic";
-	src:url("https://d1c2c5je6wktky.cloudfront.net/WF-010301-001099-000448.woff?Expires=1315861448&Key-Pair-Id=APKAJTRIQPE4Z6KCMOEA&Signature=G0ULwETLrU8XJcB2tHUdbhDGezHMfcYfwUa3TNxKRgXyKA~bsaxvQynGc537ZBwYf8cnNzvkznqlz0KnOkAFU8YS2t7Xb5aCWUs01bcqcQJccY16mrf9R2wdTiiN~e79WJLS9ec4B-OqvA~-1oOsARt1ra1uj67kpLl9MOZVkVo_") format("woff");
+	src:url("https://d1c2c5je6wktky.cloudfront.net/WF-010301-001099-000448.woff?Expires=1315924685&Key-Pair-Id=APKAJTRIQPE4Z6KCMOEA&Signature=Txtg5FqS5kUQw561PGWfMovtt~WIFp0iDCFTmWdEkBiQemMal6OzHu5iGwSsi6hqZBa374gWfoPz3hZmP~e-4RvuTKIzGPCczs9Sg5ACu5QXhqL6bwcLVpdiXi7W~gRqe0qSON3cgGBoqMxqa-2Jkk8zaH5Q03whzLZ3OD1h8r4_") format("woff");
 font-style: italic;
 font-weight: bold;
 font-stretch: normal;}
 @font-face{
 	font-family:"Fedra Sans Screen Regular 2";
-	src:url("https://d1c2c5je6wktky.cloudfront.net/WF-010301-001099-000449.woff?Expires=1315861448&Key-Pair-Id=APKAJTRIQPE4Z6KCMOEA&Signature=D7v8Zw0M60UjcDDvZhsGjnEvZkaZ3o6GH2d-9a-LjdfTKk~gf1pCOM7g86WCpDB1Q381e75S570sHKJ4cxXhxfTOZePupfNmI0BKtXQ78g2gRTpmLjQlT1wFoXM9pMug5Y6ijdo2c0FNBKK-MxG~x~d2CYVLU1zrgwUblBBMKuw_") format("woff");
+	src:url("https://d1c2c5je6wktky.cloudfront.net/WF-010301-001099-000449.woff?Expires=1315924685&Key-Pair-Id=APKAJTRIQPE4Z6KCMOEA&Signature=YqoiZBD52Ew~EUcDYoVFrTK9wluSn3~fU1QQN1XpCkOVHv-FR9VD3nT--WQbFOe~k3Gl8O0RXlv~ochMQVLTC7V8vmnSJZ~wVrrgLEGl6pBYr0G-269Requ2nLXZRB3bwffzUZ5WWYQiwb4441kWP6yIdMc~fUMF7BcDyJ0TjUw_") format("woff");
 font-style: normal;
 font-weight: normal;
 font-stretch: normal;}
 @font-face{
 	font-family:"Fedra Sans Screen Bold 2";
-	src:url("https://d1c2c5je6wktky.cloudfront.net/WF-010301-001099-000450.woff?Expires=1315861448&Key-Pair-Id=APKAJTRIQPE4Z6KCMOEA&Signature=IfJkyK9XXvZ9GkQo5Eo7irAtIBybMuMbkeCHiC57-iG2uU6ITbCcLc4gQ3wyjfzBHwal7lu1MQmNfXzWAzvCKnX2zqFZnMClDvv030hnq~QLSADBKSS9lOhkrT8689MqTzHpdpH-xuSyByeWZy2lwU1eUN2LHWhcc~TSLgY1yC0_") format("woff");
+	src:url("https://d1c2c5je6wktky.cloudfront.net/WF-010301-001099-000450.woff?Expires=1315924685&Key-Pair-Id=APKAJTRIQPE4Z6KCMOEA&Signature=F33JWK9yLsU90GQJa8PLKT06lDMU8wCkNlo6iKoHTnyuuwSJiOAk7rJQl2SfIaCpKjWPJxLNZkkhVSOCfYUrIQEwXX6TRmcXhedvHw3yqFy0h32eZqsQuWKmD2JHL8N~y6Fn1WqvjYROJdRRYQOnWQoK0BmFI41GKvgUlm6JDKU_") format("woff");
 font-style: normal;
 font-weight: bold;
 font-stretch: normal;}
 @font-face{
 	font-family:"Fedra Sans Screen Italic 2";
-	src:url("https://d1c2c5je6wktky.cloudfront.net/WF-010301-001099-000451.woff?Expires=1315861448&Key-Pair-Id=APKAJTRIQPE4Z6KCMOEA&Signature=NSLX0GjGDuM~4RY1Btvdpp0VSqXOeRNAoe6WkPSPOED0~EfK7exOlsI~QiJXceoPp49PaqRlFrvWHswz~wzite1hDRCdbbMkR6H9zGFZ2MPgEzc0735YZ9EXz2yGBDZir-BcGHgCzgRm8w1WQWlYsMo~BUh1VKpEwwqDXF9SS-s_") format("woff");
+	src:url("https://d1c2c5je6wktky.cloudfront.net/WF-010301-001099-000451.woff?Expires=1315924685&Key-Pair-Id=APKAJTRIQPE4Z6KCMOEA&Signature=UOmUO0ev4KpFC9-c7O2q9RjDTtCRi62lHEiM8xmgepqOsrD5h4CF6k9ClD-~y1nayTJxTCasAHbFnuBa6WEtKNuYyA9DCLer9JzOZNcz6c~YWHc1vtTpYiar~ebMkBBThcZO-dZRe8YAaLf6~bdj5tC0omHexZj7X5r9XjN4ZMY_") format("woff");
 font-style: italic;
 font-weight: normal;
 font-stretch: normal;}
 @font-face{
 	font-family:"Fedra Sans Screen Bold Italic 2";
-	src:url("https://d1c2c5je6wktky.cloudfront.net/WF-010301-001099-000452.woff?Expires=1315861448&Key-Pair-Id=APKAJTRIQPE4Z6KCMOEA&Signature=H8Xs2rRf~LNUf41AdQ8k9E3aM1VkQPjWn-b0SkqlatHXPedVIZFiDu4~ca5X4zReWknPSHr0XTsP6nFtVn3zUg1qWxS15iJ1QnuolvZBdGKx73go~pQSuFCTBzfVrlzsXpBoU26wYm10uYlFwSKA6DghEQlhxG1mb8bw-nA-Kzc_") format("woff");
+	src:url("https://d1c2c5je6wktky.cloudfront.net/WF-010301-001099-000452.woff?Expires=1315924686&Key-Pair-Id=APKAJTRIQPE4Z6KCMOEA&Signature=gBG~O6pKcALEB1B5L-BFgjOpBzP1Kq5NHo8QQ49PNq6jV8iFubIRue4BLxjBCiDvYW8u3CS9L8FGV9KvmYE26TSRh4QBZu5XhbmC9JI9XyPXvRO0Oix77~ArvVlibu5YiUYK6a0x5soeS~PWG5ZhcN42QurCfJkg~NRXOxJd-uU_") format("woff");
 font-style: italic;
 font-weight: bold;
 font-stretch: normal;}

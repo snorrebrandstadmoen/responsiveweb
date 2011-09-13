@@ -1,0 +1,67 @@
+/*
+* Webfonts served by Typotheque.com
+*
+* To make the font files as small as possible,
+* most glyphs and OpenType features were removed.
+* To edit the fonts, add more language support,
+* log it to your Typotheque account:
+* http://www.typotheque.com/my_account/webfonts
+*
+* The Typotheque Font Software is protected under domestic
+* and international trademark and copyright law.
+* Modifying, reverse engineering or otherwise copying
+* of Typotheque Font Software is illegal.
+* http://www.typotheque.com/licensing/
+*
+* (c) 2011, Typotheque
+*/
+
+@font-face{
+	font-family:"Fedra Serif Screen Regular";
+	src:url("https://d1c2c5je6wktky.cloudfront.net/WF-010301-001099-000445.woff?Expires=1315925752&Key-Pair-Id=APKAJTRIQPE4Z6KCMOEA&Signature=T7xxZ7bOGJ520Zoq8SPUXieSVSE5Aq02ZLV~YsRZaGd5KrCd1-qa-K1QmOO7m8450Tl3oZ5AAVorrLkEzgVnHPl1FSHt4UEa0u7S~X1t8leOatR6bD9EaV9lBgaeBzWSC1AG7zlIn~2B769Cl9dkYcIXfvLK9FIVRLYyPmIGJas_") format("woff");
+font-style: normal;
+font-weight: normal;
+font-stretch: normal;}
+@font-face{
+	font-family:"Fedra Serif Screen Italic";
+	src:url("https://d1c2c5je6wktky.cloudfront.net/WF-010301-001099-000446.woff?Expires=1315925752&Key-Pair-Id=APKAJTRIQPE4Z6KCMOEA&Signature=Tf0oycktljaNGERQJVuThb4KCIfB5Mrpnty7BShfdGI23-1C7eVcHygBpLbhE6n6V3ZqRLSKhJMH1JIbNMmaF3U6KpJDfwRdMXFJs86L3Uzd9tHs0rL7jFPWmTQGONd0ZDTubv4uHerpLdVTM85z3PZkubyOIfp16NR9LfWlSFc_") format("woff");
+font-style: italic;
+font-weight: normal;
+font-stretch: normal;}
+@font-face{
+	font-family:"Fedra Serif Screen Bold";
+	src:url("https://d1c2c5je6wktky.cloudfront.net/WF-010301-001099-000447.woff?Expires=1315925752&Key-Pair-Id=APKAJTRIQPE4Z6KCMOEA&Signature=KrUYDh6BeSW0G1b3oKSTboMT4L9or0qP137cl9PlNpv4-LkGfSaFJ8lRJyLS2QwCtkol4n6cl3WJu35AfNiPecj7P2i7RDU4hXprdglCCxnGYK67KvOgIOUyJhZTLnZcbXoYNLPrALVY8gEuPvShiEqPOsdVLD-Eor9IbM~QaTQ_") format("woff");
+font-style: normal;
+font-weight: bold;
+font-stretch: normal;}
+@font-face{
+	font-family:"Fedra Serif Screen Bold Italic";
+	src:url("https://d1c2c5je6wktky.cloudfront.net/WF-010301-001099-000448.woff?Expires=1315925752&Key-Pair-Id=APKAJTRIQPE4Z6KCMOEA&Signature=XaUUHHKpt1N6C26ceUujqnc3Va2WNV90vK7U-HPO8L5SGpFdx7btQ45wnX9dP82-3hlUtZThk-C29y6FHVzLPzgAKzTfAILmOjAk0LSqSCWZwOPAi5SWj1zYmWg1ZplPZjxhcmm06NYgBv0GbWQH-MjLfQql~bIop-LJH4GTai4_") format("woff");
+font-style: italic;
+font-weight: bold;
+font-stretch: normal;}
+@font-face{
+	font-family:"Fedra Sans Screen Regular 2";
+	src:url("https://d1c2c5je6wktky.cloudfront.net/WF-010301-001099-000449.woff?Expires=1315925752&Key-Pair-Id=APKAJTRIQPE4Z6KCMOEA&Signature=eWeCEKDuXeofRZSUSwQwEAcbUwAR1HGeWEUjlXvTn-ZmMWfuqpNH-KzifYc-Prq7aVNoZBGuMrQRwSSaR74v9ZPKLcKghb4APzwONU9uhUiqkVM52721zkGt08Rs~6k8QkK~jTYlNRB-9pM23mzPpfJ4xqJ4spOg3D3d5D~crUg_") format("woff");
+font-style: normal;
+font-weight: normal;
+font-stretch: normal;}
+@font-face{
+	font-family:"Fedra Sans Screen Bold 2";
+	src:url("https://d1c2c5je6wktky.cloudfront.net/WF-010301-001099-000450.woff?Expires=1315925752&Key-Pair-Id=APKAJTRIQPE4Z6KCMOEA&Signature=JGSAeJtTiUg3N0ohcMsLfN3692bh69LlDe6aJEfovhyO~~NbtAXsZqZEYW2dD~ng0ugqR7j90wTBLbgJxbUsx3WPIqTzwkhmXY2QYxK~dUlQzJtJpvKj7wpY9A5h27lw4-R5ROs1-GoaACXsmxDonwspDoRZEtk7RwxKV2ZOcYU_") format("woff");
+font-style: normal;
+font-weight: bold;
+font-stretch: normal;}
+@font-face{
+	font-family:"Fedra Sans Screen Italic 2";
+	src:url("https://d1c2c5je6wktky.cloudfront.net/WF-010301-001099-000451.woff?Expires=1315925752&Key-Pair-Id=APKAJTRIQPE4Z6KCMOEA&Signature=QYBiWMd8ZW2XwN3qGnYavvhcaw4LacSJ5rsftYeYc34VfJyNalESjYwIL1H8x4jOfUeynMNdAjc3Mo~xUUUqGX~-w27G0pnQWq6F4KrcyuN5Nbywt7FJV9hB49A5L~2KAmb-JV7xBrmQIrwBexwS82sC1Sz1bRpmuAIhAqyjjfM_") format("woff");
+font-style: italic;
+font-weight: normal;
+font-stretch: normal;}
+@font-face{
+	font-family:"Fedra Sans Screen Bold Italic 2";
+	src:url("https://d1c2c5je6wktky.cloudfront.net/WF-010301-001099-000452.woff?Expires=1315925752&Key-Pair-Id=APKAJTRIQPE4Z6KCMOEA&Signature=IceKonfJsKssnUPlRrkTMXsWRcWanbDnXHMzJpmgAKIoWngRTvfpoSr8vY8Ejin7EUwYRAkUMe5jGyKWLA9EfgEzPjkD5mmGSoksX1QEq2NQ0WPziDqHwXdtvmDVDHYIC~zUP-3PaJprnYRydcMNNZe9KxPSPT5xEfem8RM8C9Q_") format("woff");
+font-style: italic;
+font-weight: bold;
+font-stretch: normal;}
+

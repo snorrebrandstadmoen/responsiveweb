@@ -1,0 +1,67 @@
+/*
+* Webfonts served by Typotheque.com
+*
+* To make the font files as small as possible,
+* most glyphs and OpenType features were removed.
+* To edit the fonts, add more language support,
+* log it to your Typotheque account:
+* http://www.typotheque.com/my_account/webfonts
+*
+* The Typotheque Font Software is protected under domestic
+* and international trademark and copyright law.
+* Modifying, reverse engineering or otherwise copying
+* of Typotheque Font Software is illegal.
+* http://www.typotheque.com/licensing/
+*
+* (c) 2011, Typotheque
+*/
+
+@font-face{
+	font-family:"Fedra Serif Screen Regular";
+	src:url("http://fonts.typotheque.com/WF-010301-001099-000445.woff?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cDovL2ZvbnRzLnR5cG90aGVxdWUuY29tL1dGLTAxMDMwMS0wMDEwOTktMDAwNDQ1LndvZmYiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjEzMTU5MjU3NTF9LCJJcEFkZHJlc3MiOnsiQVdTOlNvdXJjZUlwIjoiODEuMC4xODUuMiJ9fX1dfQ__&Key-Pair-Id=APKAJTRIQPE4Z6KCMOEA&Signature=Vmp4V7PvugnenbzYCkU5BX6PRpuHz~LStQ9R0obvpSw~jKFGkVgrLbDvNOwB0mFjuu4a63RpncFIoIZcdi9OsU9GIxuzi2u5BiooY5SnRoEKi9b77fF1C2tXxYYh50ft52mrJGGAn2Id~NtsiGZreDQxyFiT38a5aqdkfzD~~hE_") format("woff");
+font-style: normal;
+font-weight: normal;
+font-stretch: normal;}
+@font-face{
+	font-family:"Fedra Serif Screen Italic";
+	src:url("http://fonts.typotheque.com/WF-010301-001099-000446.woff?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cDovL2ZvbnRzLnR5cG90aGVxdWUuY29tL1dGLTAxMDMwMS0wMDEwOTktMDAwNDQ2LndvZmYiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjEzMTU5MjU3NTF9LCJJcEFkZHJlc3MiOnsiQVdTOlNvdXJjZUlwIjoiODEuMC4xODUuMiJ9fX1dfQ__&Key-Pair-Id=APKAJTRIQPE4Z6KCMOEA&Signature=J-FSIZiRnuFWA2ujm0Ncwt5XvkWFQts0JUv9xHzANesZTJqXZq-VTTEpZv~Q4WZC1lbsZkr06sVwQEaQuuc8W-BvuWgz88eAyt-cOG7tFQOs74-SurH4Xj9LMjJ0kqGcl3-gCHKhNk~moKGLe0yfByKcm1onpBqnoSoM5NG2xfU_") format("woff");
+font-style: italic;
+font-weight: normal;
+font-stretch: normal;}
+@font-face{
+	font-family:"Fedra Serif Screen Bold";
+	src:url("http://fonts.typotheque.com/WF-010301-001099-000447.woff?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cDovL2ZvbnRzLnR5cG90aGVxdWUuY29tL1dGLTAxMDMwMS0wMDEwOTktMDAwNDQ3LndvZmYiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjEzMTU5MjU3NTF9LCJJcEFkZHJlc3MiOnsiQVdTOlNvdXJjZUlwIjoiODEuMC4xODUuMiJ9fX1dfQ__&Key-Pair-Id=APKAJTRIQPE4Z6KCMOEA&Signature=J6bSpuMyPedXhoUX35g6tps9Nxrd1bvBK00qbzVwnQ9ATvegYpjiE5ZtcGaU68AkIgAs~XTHFK5t-XGFj0uiT6HPYirNC5vBRV3MDjiB71kMoV4Zl9vlScBcv6bQOz7FCHWxC4z5tV5rwc-Q~Sm6v3SB~yhkt~TKNb7rT3zXreo_") format("woff");
+font-style: normal;
+font-weight: bold;
+font-stretch: normal;}
+@font-face{
+	font-family:"Fedra Serif Screen Bold Italic";
+	src:url("http://fonts.typotheque.com/WF-010301-001099-000448.woff?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cDovL2ZvbnRzLnR5cG90aGVxdWUuY29tL1dGLTAxMDMwMS0wMDEwOTktMDAwNDQ4LndvZmYiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjEzMTU5MjU3NTF9LCJJcEFkZHJlc3MiOnsiQVdTOlNvdXJjZUlwIjoiODEuMC4xODUuMiJ9fX1dfQ__&Key-Pair-Id=APKAJTRIQPE4Z6KCMOEA&Signature=aC5zTg6bVib~cLBiUsDPA1uaSpOYANQsL7CINpOQrBvX8RD45Zna38aleO39o9BD~9l8xuvDIIEb4evzDIpWb9XY4LtGBovTZ0MwMBWJaicaePbEExTxyWmZNsZ79sJCW3pxCab-QdU3ztf1-uCD2wtjDHSicF0taLES32hidA4_") format("woff");
+font-style: italic;
+font-weight: bold;
+font-stretch: normal;}
+@font-face{
+	font-family:"Fedra Sans Screen Regular 2";
+	src:url("http://fonts.typotheque.com/WF-010301-001099-000449.woff?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cDovL2ZvbnRzLnR5cG90aGVxdWUuY29tL1dGLTAxMDMwMS0wMDEwOTktMDAwNDQ5LndvZmYiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjEzMTU5MjU3NTF9LCJJcEFkZHJlc3MiOnsiQVdTOlNvdXJjZUlwIjoiODEuMC4xODUuMiJ9fX1dfQ__&Key-Pair-Id=APKAJTRIQPE4Z6KCMOEA&Signature=KVYjAaHc~ogx1cEeaFcnj1G4XyQHxtu0cqyuP3eNbiS2Aov54Kxd8xgHrJRRzS82vWkeMHgFKnai9HEymEXuFbMWaukNge-tcLrOG9ZYcRgrhdW0kvQomkwwTH4D~7R7OP0Itvih2CAAcrGBJhykMtZ4TtlJHve9KfP1flkSHWE_") format("woff");
+font-style: normal;
+font-weight: normal;
+font-stretch: normal;}
+@font-face{
+	font-family:"Fedra Sans Screen Bold 2";
+	src:url("http://fonts.typotheque.com/WF-010301-001099-000450.woff?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cDovL2ZvbnRzLnR5cG90aGVxdWUuY29tL1dGLTAxMDMwMS0wMDEwOTktMDAwNDUwLndvZmYiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjEzMTU5MjU3NTF9LCJJcEFkZHJlc3MiOnsiQVdTOlNvdXJjZUlwIjoiODEuMC4xODUuMiJ9fX1dfQ__&Key-Pair-Id=APKAJTRIQPE4Z6KCMOEA&Signature=fZCnrD0vDkKazyDXZzAyaiGVB-ALgusEg~nsvD2yOC0QpTpYZ-8kCYL8E5BmK4wzLDP7BiHBs6TZhDvAkryCWQU7GKZHI1tvOyfEP1A~ZO8zZX9jV2K9DBx4j4q6T5CwXL3JR2nF4qu4Uq0kWPM870KwSqmY2eM8Jhk~GNk4b6s_") format("woff");
+font-style: normal;
+font-weight: bold;
+font-stretch: normal;}
+@font-face{
+	font-family:"Fedra Sans Screen Italic 2";
+	src:url("http://fonts.typotheque.com/WF-010301-001099-000451.woff?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cDovL2ZvbnRzLnR5cG90aGVxdWUuY29tL1dGLTAxMDMwMS0wMDEwOTktMDAwNDUxLndvZmYiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjEzMTU5MjU3NTF9LCJJcEFkZHJlc3MiOnsiQVdTOlNvdXJjZUlwIjoiODEuMC4xODUuMiJ9fX1dfQ__&Key-Pair-Id=APKAJTRIQPE4Z6KCMOEA&Signature=CQB1TRDebThfZ7S88jcEQp9fbBK8~5TIQ3gOFBUqAqBSN4YLGFeBFoCIsrO36YVyL~MIvhrFMpynNyEPwlc58TLLm~OFi0A8VQqT7GGAWiydEjifStLRxhXxfOHNa~TeLl-UXO3uWPtp3B5SZo0QlbcltFBNKZu~iJ8inrJhhdk_") format("woff");
+font-style: italic;
+font-weight: normal;
+font-stretch: normal;}
+@font-face{
+	font-family:"Fedra Sans Screen Bold Italic 2";
+	src:url("http://fonts.typotheque.com/WF-010301-001099-000452.woff?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cDovL2ZvbnRzLnR5cG90aGVxdWUuY29tL1dGLTAxMDMwMS0wMDEwOTktMDAwNDUyLndvZmYiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjEzMTU5MjU3NTF9LCJJcEFkZHJlc3MiOnsiQVdTOlNvdXJjZUlwIjoiODEuMC4xODUuMiJ9fX1dfQ__&Key-Pair-Id=APKAJTRIQPE4Z6KCMOEA&Signature=geUtPbBmofT9R7RPTPj95IZolJmY-TiEVhdCLsYsmNlthfW9~rHCR8vIjiUR-xIVYdP~3A1QeTTGV8qInAyhfJo7Av6qHmXMEmdVmLOqMs1LS5eFCbWg8HpU8r~4eIAndeCY-rmFlZZtYjNJJt8VqnyThDYSInmyIDi8rLSZDaQ_") format("woff");
+font-style: italic;
+font-weight: bold;
+font-stretch: normal;}
+

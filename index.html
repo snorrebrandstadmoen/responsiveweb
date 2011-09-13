@@ -1,1 +1,649 @@
-test
+<!DOCTYPE html>
+
+<!-- 
+320 and Up boilerplate extension
+Author: Andy Clarke
+Version: 0.9b
+URL: http://stuffandnonsense.co.uk/projects/320andup 
+-->
+
+<!--[if IEMobile 7 ]><html class="no-js iem7" manifest="default.appcache?v=1"><![endif]-->
+<!--[if lt IE 7 ]><html class="no-js ie6" lang="en"><![endif]-->
+<!--[if IE 7 ]><html class="no-js ie7" lang="en"><![endif]-->
+<!--[if IE 8 ]><html class="no-js ie8" lang="en"><![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" manifest="default.appcache?v=1" lang="en"><!--<![endif]-->
+
+<head>
+<meta charset="utf-8">
+
+<title>320 and up</title>
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1">
+
+<!-- For less capable mobile browsers
+<link rel="stylesheet" media="handheld" href="css/handheld.css?v=1">  -->
+
+
+<!-- For all browsers -->
+<link rel="stylesheet" media="screen" href="css/style.css?v=1">
+<link rel="stylesheet" media="print" href="css/print.css?v=1">
+<!-- For progressively larger displays -->
+<link rel="stylesheet" media="only screen and (min-width: 480px)" href="css/480.css?v=1">
+<link rel="stylesheet" media="only screen and (min-width: 768px)" href="css/768.css?v=1">
+<link rel="stylesheet" media="only screen and (min-width: 992px)" href="css/992.css?v=1">
+<link rel="stylesheet" media="only screen and (min-width: 1382px)" href="css/1382.css?v=1">
+
+
+<!-- For Retina displays -->
+<link rel="stylesheet" media="only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2)" href="css/2x.css?v=1">
+
+
+<!-- BEKK -->
+<link rel="stylesheet" media="screen" href="./index_files/bekkstyle.css">
+
+
+
+<!-- JavaScript at bottom except for Modernizr -->
+<script src="js/libs/modernizr-1.7.min.js"></script>
+
+<!-- For iPhone 4 -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/h/apple-touch-icon.png">
+<!-- For iPad 1-->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/m/apple-touch-icon.png">
+<!-- For iPhone 3G, iPod Touch and Android -->
+<link rel="apple-touch-icon-precomposed" href="img/l/apple-touch-icon-precomposed.png">
+<!-- For Nokia -->
+<link rel="shortcut icon" href="img/l/apple-touch-icon.png">
+<!-- For everything else -->
+<link rel="shortcut icon" href="/favicon.ico">
+
+<!--iOS. Delete if not required -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="apple-touch-startup-image" href="img/splash.png">
+
+<!--Microsoft. Delete if not required -->
+<meta http-equiv="cleartype" content="on">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<!-- http://t.co/y1jPVnT -->
+<link rel="canonical" href="/">
+</head>
+
+<body class="clearfix wordpress y2011 m09 d13 h19 single postid-6313 s-y2011 s-m09 s-d09 s-h07 s-category-bekk s-author-espen-halvorsen">
+	
+	
+	<div id="wrapper" class="hfeed">
+
+		<div id="header">
+			<a href="http://open.bekk.no/" id="homeLink" title="BEKK Open" rel="home"><img src="./index_files/logo.gif" width="184" height="25" alt="Til forsiden"></a>
+	<!--
+			<h1 id="blog-title"><span><a href="http://open.bekk.no/" title="BEKK Open" rel="home">BEKK Open</a></span></h1>
+			<div id="blog-description">Et innblikk i hva som skjer i BEKK</div>
+	-->		
+		</div><!--  #header -->
+
+		<div id="access">
+			<div class="skip-link"><a href="http://open.bekk.no/sikker-rest/#content" title="Skip to content">Skip to content</a></div>
+			<div id="menu"><ul><li class="page_item page-item-2"><a href="http://open.bekk.no/about/" title="Velkommen til BEKK Open!">Velkommen til BEKK Open!</a></li><li class="page_item page-item-866"><a href="http://open.bekk.no/systemarkitektur/" title="Systemarkitektur">Systemarkitektur</a></li><li class="page_item page-item-4049"><a href="http://open.bekk.no/boss/" title="BOSS">BOSS</a><ul class="children"><li class="page_item page-item-5417"><a href="http://open.bekk.no/boss/spring-scheduling-in-websphere/" title="Spring Scheduling in WebSphere">Spring Scheduling in WebSphere</a></li></ul></li></ul></div>
+		</div><!-- #access -->
+
+		<div id="container">
+			<div id="content">
+
+
+				<div id="nav-above" class="navigation">
+					<div class="nav-previous"><a href="http://open.bekk.no/kryssplattformutvikling-i-net-i-praksis-om-mobilutvikling-fra-ndc-2011/" rel="prev"><span class="meta-nav">«</span> Kryssplattformutvikling i .NET i praksis: om mobilutvikling fra NDC 2011</a></div>
+					<div class="nav-next"><a href="http://open.bekk.no/keeping-your-maven-build-fast/" rel="next">Keeping your Maven build fast <span class="meta-nav">»</span></a></div>
+				</div>
+
+				<div id="post-6313" class="hentry p1 post publish author-espen-herseth-halvorsen category-bekk untagged y2011 m09 d09 h07">
+					<h2 class="entry-title">Hvordan designe et sikkert REST-API</h2>
+					<div class="entry-content">
+	<p><strong>De siste par månedene har vi jobbet med å lage et sikkert REST-API for Digipost. API’et hadde krav om konfidensialitet, autensitet, integritet og uavviselighet. I denne bloggposten ser vi på hvordan vi designet API’et og sikkerhetsmekanismen for å oppnå dette.</strong></p>
+	<p>Denne bloggposten er delt inn i tre deler:</p>
+	<ul>
+	<li>Først tar vi for oss rammeverket vi bruker for å lage selve REST-API’et (uten sikkerhetsmekanismen)</li>
+	<li>Deretter ser vi på kombinasjonen av ulike sikkerhetsteknikker som til sammen utgjør sikkerhetsmekanismen vi har gått for</li>
+	<li>Til slutt ser vi på en del kodeeksempler som viser hvordan man kan implementere denne sikkerhetsmekanismen i rammeverket vi bruker som eksempel.</li>
+	</ul>
+	<hr>
+	<img src="./index_files/del1.png" width="100%" style="margin-bottom: 10px"><p></p>
+	<p>På vårt prosjekt benytter vi oss av Java, derfor var det naturlig å lage API’et vårt i dette også. Fra tidligere har vi en del erfaring med å benytte oss av Struts’ REST-plugin til å implementere REST-API’er. Selv om dette rammeverket har flere fordeler, så har det også en god del ulemper, og det gjør det også til tider ganske komplisert å få til ting som burde være enklere. Spesielt gjør det det vanskelig å følge <a href="http://en.wikipedia.org/wiki/Restful">prinsippene for RESTful design</a> til fulle. Derfor var vi egentlig på jakt etter noe mer fleksibelt og moderne.</p>
+	<h2>Jersey to the resque</h2>
+	<p>I Java-verdenen har det de siste årene blitt jobbet med en standard for REST-rammeverk kalt JAX-RS. Dette er en spesifikasjon – ikke en komplett implementasjon. Derfor er det flere rammeverk som implementerer den. Jersey er en implementasjon av denne standarden, backet av Oracle. På tidspunktet da vi startet arbeidet med dette API’et virket dette rammeverket ganske stabilt, derfor har vi valgt å gå for dette. Denne bloggposten vil derfor naturlig nok også benytte Jersey som eksempel.</p>
+	<p>Selv om vi benytter oss av Jersey for REST-implementasjonen av eksempelet her, så betyr ikke det at du ikke vil har nytte av å lese bloggposten om du benytter deg av et annet rammeverk (eller et annet programmeringsspråk for den saks skyld). Det er ingenting i denne sikkerhetsmekanismen som er spesifikt for Java eller Jersey, så konseptene lar seg lett implementere i de fleste språk. Så lenge webrammeverket ditt har et konsept om interceptorer/filtere som lar deg behandle og sjekke alle innkommende forespørsler på ett sentralt sted i koden, så burde du kunne implementere sikkerhetsmekanismen.</p>
+	<div style="color: #9F6000; background-color: #FEEFB3; padding: 10px; border: 1px solid #9F6000">
+	<strong style="font-size: 120%">To REST or not to REST, that’s the question!</strong><p></p>
+	<p>En liten advarsel: denne guiden forsøker ikke å forklare deg hvordan du kan lage et REST-rammeverk som tilfredstiller alle “kravene” for en RESTful arkitektur 110% – selv vårt API tangerer nok bare nesten 100%-grensen. Sikkerhetsmekanismen vi beskriver kan benyttes på alle webtjenester som går over HTTP, og er således ikke sterkt knyttet til REST. Så om REST-politiet kommer og tar deg, så ikke skyld på denne guiden <img src="./index_files/icon_wink.gif" alt=";)" class="wp-smiley">
+	</p></div>
+	<h2>Oppsett av Jersey</h2>
+	<p>Før du kan begynne å skrive kode for de ulike endpointene i API’et ditt, er du nødt til å sette opp Jersey. Jeg har ikke tenkt å gå i detalj på det her, du finner en del informasjon om dette i <a href="http://jersey.java.net/nonav/documentation/latest/user-guide.html#d4e8">Jersey’s dokumentasjon</a>. </p>
+	<p>Av erfaring så kan jeg nevne at Jersey er ganske fleksibelt mtp. hvordan du ønsker å sette det opp og deploye det. Vi benytter oss for eksempel av Spring for å slippe XML-konfigurasjon av de ulike endpointene, og for dependency-injection inn i Java-filene. I tillegg kjører vi Jersey bak webcontaineren Jetty. Begge disse kombinasjonene fungerer utmerket, til tross for at de ikke er “standardoppsettet” som er beskrevet i dokumentasjonen.</p>
+	<p>Med tanke på testing er det også en stor fordel å kunne kjøre Jersey bak Jetty. Vi kan enkelt lage fullverdige integrasjonstester som drar opp Jetty med Jersey, og faktisk gjør HTTP-kall mot API’et og gjør asserts på HTTP-responsen. Til dette har Jersey et glimrende <a href="http://jersey.java.net/nonav/documentation/latest/user-guide.html#client-api">klientbibliotek</a>, som man kan benytte for å gjøre HTTP-kall mot API’et.</p>
+	<h2>Bruk av Jersey</h2>
+	<p>Når du først har fått satt opp Jersey, så er det veldig enkelt å lage nye endpoints. Følgende kode viser alt som skal til for å lage en metode som responderer på en GET mot /heiverden:</p>
+	<p><script src="./index_files/1192983.js"></script><link rel="stylesheet" href="https://gist.github.com/stylesheets/gist/embed.css"></p><div id="gist-1192983" class="gist">
+
+
+
+
+
+
+
+	        <div class="gist-file">
+	          <div class="gist-data gist-syntax">
+
+
+
+	              <div class="gist-highlight"><pre><div class="line" id="LC1"><span class="nd">@Path</span><span class="o">(</span><span class="s">"/heiverden"</span><span class="o">)</span></div><div class="line" id="LC2"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">HeiVerdenResource</span> <span class="o">{</span></div><div class="line" id="LC3">	<span class="nd">@GET</span></div><div class="line" id="LC4">	<span class="nd">@Produces</span><span class="o">(</span><span class="s">"text/plain"</span><span class="o">)</span></div><div class="line" id="LC5">	<span class="kd">public</span> <span class="n">String</span> <span class="nf">heiVerdenMetoden</span><span class="o">()</span> <span class="o">{</span></div><div class="line" id="LC6">		<span class="k">return</span> <span class="s">"Hei verden!"</span><span class="o">;</span></div><div class="line" id="LC7">	<span class="o">}</span></div><div class="line" id="LC8"><span class="o">}</span></div></pre></div>
+
+	          </div>
+
+	          <div class="gist-meta">
+	            <a href="https://gist.github.com/raw/1192983/a82f8c0d1a236f2507f3420504b0d95c57a1ebe2/gistfile1.java" style="float:right;">view raw</a>
+	            <a href="https://gist.github.com/1192983#file_gistfile1.java" style="float:right;margin-right:10px;color:#666">gistfile1.java</a>
+	            <a href="https://gist.github.com/1192983">This Gist</a> brought to you by <a href="http://github.com/">GitHub</a>.
+	          </div>
+	        </div>
+
+
+
+	</div>
+	<p></p>
+	<p>Som du ser er Jersey i stor grad basert på Java-Annotations. Dette er en ganske behagelig måte å kode på, siden du kan se all konfigurasjon rett ved siden av koden som gjør den faktiske behandlingen av requests. </p>
+	<p>På samme måte kan du støtte de andre HTTP-verbene. Det er i tillegg en rekke andre annoteringer du kan benytte for det du trenger, følgende viser en tenkt “User”-ressurs med kode for å oppdatere en bruker:</p>
+	<p><script src="./index_files/1193002.js"></script><link rel="stylesheet" href="https://gist.github.com/stylesheets/gist/embed.css"></p><div id="gist-1193002" class="gist">
+
+
+
+
+
+
+
+	        <div class="gist-file">
+	          <div class="gist-data gist-syntax">
+
+
+
+	              <div class="gist-highlight"><pre><div class="line" id="LC1"><span class="nd">@Path</span><span class="o">(</span><span class="s">"/user"</span><span class="o">)</span></div><div class="line" id="LC2"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">UserResource</span> <span class="o">{</span></div><div class="line" id="LC3"><br></div><div class="line" id="LC4">	<span class="nd">@PUT</span></div><div class="line" id="LC5">	<span class="nd">@Path</span><span class="o">(</span><span class="s">"{username: [a-zA-Z][a-zA-Z_0-9]*}"</span><span class="o">)</span></div><div class="line" id="LC6">	<span class="nd">@Consumes</span><span class="o">(</span><span class="s">"application/json, application/xml"</span><span class="o">)</span></div><div class="line" id="LC7">	<span class="nd">@Produces</span><span class="o">(</span><span class="s">"application/json, application/xml"</span><span class="o">)</span></div><div class="line" id="LC8">	<span class="kd">public</span> <span class="n">Response</span> <span class="nf">updateUser</span><span class="o">(</span><span class="nd">@PathParam</span><span class="o">(</span><span class="s">"username"</span><span class="o">)</span> <span class="n">String</span> <span class="n">userName</span><span class="o">)</span> <span class="o">{</span></div><div class="line" id="LC9">		<span class="c1">//Do your thing here… ;)</span></div><div class="line" id="LC10">	<span class="o">}</span></div><div class="line" id="LC11"><span class="o">}</span></div></pre></div>
+
+	          </div>
+
+	          <div class="gist-meta">
+	            <a href="https://gist.github.com/raw/1193002/007780ce736911aedb2e2b538c1be2bb8e635752/gistfile1.java" style="float:right;">view raw</a>
+	            <a href="https://gist.github.com/1193002#file_gistfile1.java" style="float:right;margin-right:10px;color:#666">gistfile1.java</a>
+	            <a href="https://gist.github.com/1193002">This Gist</a> brought to you by <a href="http://github.com/">GitHub</a>.
+	          </div>
+	        </div>
+
+
+
+	</div>
+	<p></p>
+	<p>Jersey har også god støtte for å lage felles funksjoner som kan intercepte alle (eller et subsett av alle) kall som kommer inn. Det er i hovedsak denne funksjonaliteten vi benytter oss av når vi senere skal se på hvordan man implementerer sikkerhetsmekanismen vår i Jersey. I Jersey kalles dette for “Filtere”. Du kan implementere filtere som sjekker/modifiserer forespørselen på vei inn (Requestfiltere) eller filtere som sjekker/modifiserer responsen på vei ut (Responsefiltere). Følgende er et eksempel på sistnevnte:</p>
+	<p><script src="./index_files/1193013.js"></script><link rel="stylesheet" href="https://gist.github.com/stylesheets/gist/embed.css"></p><div id="gist-1193013" class="gist">
+
+
+
+
+
+
+
+	        <div class="gist-file">
+	          <div class="gist-data gist-syntax">
+
+
+
+	              <div class="gist-highlight"><pre><div class="line" id="LC1"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">MittResponseFilter</span> <span class="kd">implements</span> <span class="n">ContainerResponseFilter</span> <span class="o">{</span></div><div class="line" id="LC2">	<span class="nd">@Override</span></div><div class="line" id="LC3">	<span class="kd">public</span> <span class="n">ContainerResponse</span> <span class="nf">filter</span><span class="o">(</span><span class="kd">final</span> <span class="n">ContainerRequest</span> <span class="n">request</span><span class="o">,</span> <span class="kd">final</span> <span class="n">ContainerResponse</span> <span class="n">response</span><span class="o">)</span> <span class="o">{</span></div><div class="line" id="LC4">		<span class="c1">// Gjør det du vil med responsen</span></div><div class="line" id="LC5">		<span class="k">return</span> <span class="n">response</span><span class="o">;</span></div><div class="line" id="LC6">	<span class="o">}</span></div><div class="line" id="LC7"><span class="o">}</span></div></pre></div>
+
+	          </div>
+
+	          <div class="gist-meta">
+	            <a href="https://gist.github.com/raw/1193013/116198f9bb953aeb05afec0dec7381d22e56ea62/gistfile1.java" style="float:right;">view raw</a>
+	            <a href="https://gist.github.com/1193013#file_gistfile1.java" style="float:right;margin-right:10px;color:#666">gistfile1.java</a>
+	            <a href="https://gist.github.com/1193013">This Gist</a> brought to you by <a href="http://github.com/">GitHub</a>.
+	          </div>
+	        </div>
+
+
+
+	</div>
+	<p></p>
+	<p>Dersom du ønsker mer informasjon om hvordan man lager endpoints, filtere og annet i Jersey, så anbefaler jeg å lese <a href="http://jersey.java.net/nonav/documentation/latest/user-guide.html">Jersey’s dokumentasjon</a> – der er det mange gode eksempler på all funksjonalitet. Vi kommer også til å komme tilbake med flere bloggposter om Jersey og REST på Bekk Open i løpet av høsten. </p>
+	<p>Om du virkelig ønsker en skikkelig gjennomgang av ideene bak REST, og mange gode tips til hvordan du kan strukturere koden din og designe et godt RESTful API, så anbefaler jeg å lese boken <a href="http://www.amazon.com/REST-Practice-Hypermedia-Systems-Architecture/dp/0596805829">REST in Practice</a>.</p>
+	<p>Med det så går vi over til sikkerhetsmekanismen.</p>
+	<hr>
+	<img src="./index_files/del2.png" width="100%" style="margin-bottom: 10px"><p></p>
+	<p>Hovedideen med sikkerhetsmekanismen vi ønsker å utvikle er “<a href="http://en.wikipedia.org/wiki/Digital_signature">signering</a>“. Når en bruker av vårt API ønsker å gjøre en forespørsel, så skal denne forespørselen måtte være signert. Men før vi gå inn på dette, la oss igjen se på de fire karakteristikkene vi ønsker at sikkerhetsmekanismen skal ha:</p>
+	<ol>
+	<li><strong>Konfidensialitet:</strong> Vi ønsker at ingen skal kunne lese innholdet i forespørslene på vei fra brukeren til oss.
+	</li><li><strong>Autensitet:</strong> Vi ønsker å kunne vite med 100% sikkerhet hvem alle forespørsler kommer fra.
+	</li><li><strong>Integritet:</strong> Vi ønsker å vite at ingen har endret på forespørselen på vei fra brukeren til oss.
+	</li><li><strong>Uavviselighet:</strong> Vi ønsker å i ettertid kunne bevise at forespørselen har kommet fra brukeren.
+	</li></ol>
+	<p>Den første av disse er litt spesiell, og vil faktisk ikke bli implementert overhodet av sikkerhetsmekanismen vi går for. Det som til gjengjeld sørger for denne er at vi deployer API’et vårt bak en HTTPS-url. Dermed får vi denne egenskapen “gratis”. Et viktig punkt her er at om du ikke er interessert i denne egenskapen, så kan du droppe dette (det virker kansje litt søkt å ønske et API med autensitet, integritet og uavviselighet, men uten konfidensialitet..)</p>
+	<h2>Signering</h2>
+	<p>Når vi her snakket om signering, så snakker vi om en <a href="http://en.wikipedia.org/wiki/Digital_signature">digital signatur</a>. Konseptet er at vi tar meldingen og bruker kryptografi til å lage en kort streng vi også kan legge ved forespørselen, som beviser at det er vi som har sendt forespørselen. </p>
+	<p>For å få til dette er vi nødt til å ha en nøkkel vi benytter til den kryptografiske signeringen. I denne guiden baserer vi oss på at vi benytter “<a href="http://en.wikipedia.org/wiki/Public-key_cryptography">public/private key</a>“-signering. Tanken bak denne mekanismen er at brukere av API’et signerer requestene med sin private nøkkel. Når vi skal sjekke signaturen, benytter vi oss av brukerens offentlige nøkkel. </p>
+	<p>Siden vi ikke har tilgang til brukerens private nøkkel, så har vi dermed ikke mulighet til å lage en slik signatur – dermed oppnår vi kravet om uavviselighet. Så lenge vi lagrer signaturen og meldingen som er signert, så kan vi når som helst i ettertid bevise at meldingen kom fra den som er i besittelse av den private nøkkelen.</p>
+	<p>Fordi ingen andre kunne ha generert signaturen oppnår vi også kravet om autensitet. Og siden enhver liten endring i meldingen ville ført til en helt annen signatur, så oppnår vi kravet om integritet.</p>
+	<p>Merk at det er mulig å forenkle sikkerhetsmekanismen en del dersom du ikke har et krav om uavviselighet. Dersom du isteden benytter deg av “<a href="http://en.wikipedia.org/wiki/Symmetric-key_algorithm">delt nøkkel</a>“-kryptografi, så vil du oppnå de to andre kravene (autensitet og integritet) likevel.</p>
+	<h2>Hva skal vi signere</h2>
+	<p>Frem til nå har vi snakket om at vi signerer hele forespørselen. Dette er en forenkling, i praksis blir det ikke det vi gjør. Fordi man ved “public/private”-key kryptografi ønsker å signere en så liten melding som mulig (pga. at signering er en tung operasjon), så signerer vi heller en representasjon av forespørselen som er like god som forespørselen i seg selv. I tillegg må vi ha med noen andre elementer i meldingen vi signerer.</p>
+	<p>I praksis ender vi opp med å lage en spesifikasjon for hva vi må trekke ut i fra forespørselen for å lage strengen som skal signeres. Vi kaller denne strengen for en “kanonisk streng” som representerer hele forespørselen. Tingene som må være med i denne er:</p>
+	<ul>
+	<li>En representasjon av innholdet i meldingen
+	</li><li>Info om hvilket endpoint som kalles (URL)
+	</li><li>Eventuelle request-parametere
+	</li><li>HTTP-metoden som ble benyttet
+	</li><li>Dato for requesten
+	</li><li>Hvem requesten kommer fra
+	</li></ul>
+	<p>Hvorfor må vi ha med alle disse tingene, og hvordan kan vi representere dem?</p>
+	<p><strong>Meldingsinnhold:</strong><br>
+	Denne har vi allerede snakket om – selvsagt må innholdet vi sender signeres. Her benytter vi oss av en kjent standard, nemlig Content-MD5-headeren. Denne er spesifisert i <a href="http://www.ietf.org/rfc/rfc1864.txt">RFC 1864</a>. Konseptet her er at hele payloaden til HTTP-forespørselen (dvs. alt bortsett fra headerene) blir hash’et til en kort streng. Det er denne vi benytter i signeringen. Å benytte denne istedenfor hele forespørselen gjør at sikkerhetsmekanismen fungerer like godt på all slags innhold – innholdet kan være ren tekst, XML, en byte-stream, eller hva som helst annet, uten at dette krever at sikkerhetsmekanismen må endres.</p>
+	<p><strong>Info om endpoint:</strong><br>
+	Dette er URL’en som blir forespurt. Grunnen til at vi tar med denne er at ingen skal kunne snappe opp forespørselen og gjøre et gjentatt kall mot et annen endpoint. Dessuten er det ganske viktig for uavviseligheten sin del å vite nøyaktig hvilken ressurs kallet ble gjort mot.</p>
+	<p><strong>Eventuelle request-parametere:</strong><br>
+	Dette er parameterene i URL’en (https://../<em>search?query=abc&amp;take=100</em>). Av samme grunn som for endpoint-URL’en er disse også viktige å ha med i signaturen.</p>
+	<p><strong>HTTP-metode som blir benyttet:</strong><br>
+	Dette sier hvilken HTTP-metode som ble kalt (GET, POST, DELETE, etc.). Det er viktig å ha med denne i signaturen, for ellers kan denne endres på veien. Tenk f.eks om en uskyldig GET mot en ressurs ble endret til en DELETE, det ville ikke være bra..</p>
+	<p><strong>Dato for requesten:</strong><br>
+	Denne er viktig å ha med for å forhindre replay-attacks. Vi benytter oss av HTTP-headeren “Date” her – denne er spesifisert i <a href="http://www.ietf.org/rfc/rfc1123.txt">RFC 1123</a>. Når requesten kommer frem må du på serveren sjekke at den er gjort innenfor et forhåndsbestemt lovlig tidsintervall fra det klokken er nå.</p>
+	<p><strong>Hvem requesten kommer fra:</strong><br>
+	Her må du ha et brukernavn eller en brukerID, slik at du vet hvem brukeren påstår han/hun er. Du tar selvsagt ikke dette for god fisk, men det er dette du bruker for å på din side vite hvilken brukers nøkkel du skal sjekke signaturen med. Dersom du tar denne brukerens nøkkel, sjekker signaturen med den, og den er gyldig, så vet du at brukeren faktisk er den han utgir seg for å være. Til dette bruker vi en egen HTTP-header, kalt X-firmanavn-UserId. Dette er en såkalt vendor-prefix’et HTTP-header, som vi styrer spesifikasjonen av helt selv.</p>
+	<h2>Kanonisk streng</h2>
+	<p>Når du har alt dette, så er du klar til å lage den kanoniske strengen som kan signeres. Akkurat rekkefølge på de ulike tingene og slik er ikke veldig viktig – det som er superviktig er at formatet er 100% nøyaktig spesifisert. Hvis denne kanoniske strengen ikke blir generert på eksakt samme måte både på klientsiden og serversiden, så vil hele sikkerhetsmekanismen falle sammen. Dersom så lite som ett eneste tegn forandres i den kanoniske strengen, så vil hele signaturen endres. Derfor må formatet være klart definert.</p>
+	<p>Følgende pseudokode er et eksempel på hvordan man kan spesifisere dette formatet:</p>
+	<p><script src="./index_files/1193027.js"></script><link rel="stylesheet" href="https://gist.github.com/stylesheets/gist/embed.css"></p><div id="gist-1193027" class="gist">
+
+
+
+
+
+
+
+	        <div class="gist-file">
+	          <div class="gist-data gist-syntax">
+
+
+
+	              <div class="gist-highlight"><pre><div class="line" id="LC1"><span class="n">String</span> <span class="n">stringToSign</span> <span class="o">=</span> <span class="n">uppercase</span><span class="o">(</span><span class="n">verb</span><span class="o">)</span> <span class="o">+</span> <span class="s">"\n"</span> <span class="o">+</span></div><div class="line" id="LC2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="n">lowercase</span><span class="o">(</span><span class="n">path</span><span class="o">)</span> <span class="o">+</span> <span class="s">"\n"</span> <span class="o">+</span></div><div class="line" id="LC3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="s">"content-md5: "</span> <span class="o">+</span> <span class="n">md5Header</span> <span class="o">+</span> <span class="s">"\n"</span> <span class="o">+</span></div><div class="line" id="LC4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="s">"date: "</span> <span class="o">+</span> <span class="n">datoHeader</span> <span class="o">+</span> <span class="s">"\n"</span> <span class="o">+</span></div><div class="line" id="LC5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="s">"x-vendor-userid: "</span> <span class="o">+</span> <span class="n">virksomhetsId</span> <span class="o">+</span> <span class="s">"\n"</span> <span class="o">+</span></div><div class="line" id="LC6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="n">lowercase</span><span class="o">(</span><span class="n">urlencode</span><span class="o">(</span><span class="n">requestparametre</span><span class="o">))</span> <span class="o">+</span> <span class="s">"\n"</span><span class="o">;</span></div></pre></div>
+
+	          </div>
+
+	          <div class="gist-meta">
+	            <a href="https://gist.github.com/raw/1193027/f0fbaededaa639d96e019c81e0b370e3b7c48c5b/gistfile1.java" style="float:right;">view raw</a>
+	            <a href="https://gist.github.com/1193027#file_gistfile1.java" style="float:right;margin-right:10px;color:#666">gistfile1.java</a>
+	            <a href="https://gist.github.com/1193027">This Gist</a> brought to you by <a href="http://github.com/">GitHub</a>.
+	          </div>
+	        </div>
+
+
+
+	</div>
+	<p></p>
+	<p>Dette vil gi en kanonisk streng som ser slik ut: </p>
+	<p><script src="./index_files/1193029.js"></script><link rel="stylesheet" href="https://gist.github.com/stylesheets/gist/embed.css"></p><div id="gist-1193029" class="gist">
+
+
+
+
+
+
+
+	        <div class="gist-file">
+	          <div class="gist-data gist-syntax">
+
+
+
+	              <div class="gist-highlight"><pre><div class="line" id="LC1">POST</div><div class="line" id="LC2">/path/to/resource</div><div class="line" id="LC3">content-md5: Q2hlY2sgSW50YWdyaXR5IQ==</div><div class="line" id="LC4">date: Wed, 29 Jun 2011 14:58:11 GMT</div><div class="line" id="LC5">x-vendor-userid: 59829</div><div class="line" id="LC6">param1=34&amp;param2=lol</div></pre></div>
+
+	          </div>
+
+	          <div class="gist-meta">
+	            <a href="https://gist.github.com/raw/1193029/9e72324f392b30ae1327db04456ea0b49898ede2/gistfile1.txt" style="float:right;">view raw</a>
+	            <a href="https://gist.github.com/1193029#file_gistfile1.txt" style="float:right;margin-right:10px;color:#666">gistfile1.txt</a>
+	            <a href="https://gist.github.com/1193029">This Gist</a> brought to you by <a href="http://github.com/">GitHub</a>.
+	          </div>
+	        </div>
+
+
+
+	</div>
+	<p></p>
+	<p>Når klienten har laget denne kanoniske strengen, så er den klar til å signeres. Dette gjøres med den private nøkkelen, og signaturen må deretter Base64-encodes. Deretter må denne også tas med i forespørselen. Dette gjøres ved å legge til en header kalt X-firmanavn-Signature, der man legger til headeren.</p>
+	<p>Når alt dette er gjort, vil meldingen gå til serveren. Så lenge alle headerene (Dato, UserID og selve signaturen) er med, så har serveren nå alt den trenger for å sjekke signaturen. Hvordan man kan gjøre dette i Jersey kommer vi til i neste seksjon.</p>
+	<hr>
+	<img src="./index_files/del3.png" width="100%" style="margin-bottom: 10px"><p></p>
+	<p>Denne delen vil fokusere på hvordan du implementerer sikkerhetsløsningen på serversiden. Dersom du lurer på hvordan du deretter kan lage en klient som implementerer denne sikkerhetsmekanismen, så anbefaler vi deg å ta en titt på eksempelklienten vi har laget for Digipost sitt REST-API. Denne finner du på dokumentasjonssidene til Digipost: <a href="https://api.digipost.no/">api.digipost.no</a>. Koden du kan laste ned derfra er open-source, derfor er den ypperlig til å lære av.</p>
+	<p>Når det gjelder server-siden, så benytter vi oss av filter-funksjonaliteten som finnes i Jersey (som vi forklarte tidligere i bloggposten). Vi legger her på Request-filtere, siden vi ønsker å sjekke (og eventuelt stoppe) alle kall på vei inn – før de når kritiske punkter i koden der vi krever at brukeren skal være autentisert og at signaturen skal være gyldig.</p>
+	<p>Vi benytter oss av totalt tre filtere (i denne rekkefølgen):</p>
+	<ul>
+	<li>ett for å sjekke at dato-headeren er satt, på gyldig format og ikke for gammel eller for ny.
+	</li><li>ett for å sjekke at Content-MD5-headeren matcher innholdet i meldingen
+	</li><li>ett for å sjekke selve signaturen
+	</li></ul>
+	<h2>Dato-filteret</h2>
+	<p>Dato-filterert er det aller enkleste: her stopper vi requesten på vei inn, og sjekker Date-headeren. Her sjekker vi bare at den er gyldig, parsebar, og ligger innenfor et gitt tidsintervall. Merk deg at selve sikkerhetssjekken kommer senere, i signaturverifikasjonsfilteret, her sanitetssjekker vi bare datoen:</p>
+	<p><script src="./index_files/1193046.js"></script><link rel="stylesheet" href="https://gist.github.com/stylesheets/gist/embed.css"></p><div id="gist-1193046" class="gist">
+
+
+
+
+
+
+
+	        <div class="gist-file">
+	          <div class="gist-data gist-syntax">
+
+
+
+	              <div class="gist-highlight"><pre><div class="line" id="LC1"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">DatoVerifikasjonsFilter</span> <span class="kd">implements</span> <span class="n">ContainerRequestFilter</span> <span class="o">{</span></div><div class="line" id="LC2">	<span class="nd">@Override</span></div><div class="line" id="LC3">	<span class="kd">public</span> <span class="n">ContainerRequest</span> <span class="nf">filter</span><span class="o">(</span><span class="kd">final</span> <span class="n">ContainerRequest</span> <span class="n">request</span><span class="o">)</span> <span class="o">{</span></div><div class="line" id="LC4">		<span class="n">String</span> <span class="n">dato</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="na">getHeaderValue</span><span class="o">(</span><span class="n">Headers</span><span class="o">.</span><span class="na">Date</span><span class="o">);</span></div><div class="line" id="LC5"><br></div><div class="line" id="LC6">		<span class="k">if</span> <span class="o">(</span><span class="n">dato</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span></div><div class="line" id="LC7">			<span class="n">sjekkDato</span><span class="o">(</span><span class="n">dato</span><span class="o">);</span></div><div class="line" id="LC8">		<span class="o">}</span> <span class="k">else</span> <span class="o">{</span></div><div class="line" id="LC9">			<span class="c1">// Kast feil - datoheader mangler!</span></div><div class="line" id="LC10">		<span class="o">}</span></div><div class="line" id="LC11">		<span class="k">return</span> <span class="n">request</span><span class="o">;</span></div><div class="line" id="LC12">	<span class="o">}</span></div><div class="line" id="LC13"><br></div><div class="line" id="LC14">	<span class="kd">private</span> <span class="kt">void</span> <span class="nf">sjekkDato</span><span class="o">(</span><span class="kd">final</span> <span class="n">String</span> <span class="n">dateOnRFC1123Format</span><span class="o">)</span> <span class="o">{</span></div><div class="line" id="LC15">		<span class="k">try</span> <span class="o">{</span></div><div class="line" id="LC16">			<span class="n">Date</span> <span class="n">date</span> <span class="o">=</span> <span class="n">DateUtil</span><span class="o">.</span><span class="na">parseDate</span><span class="o">(</span><span class="n">dateOnRFC1123Format</span><span class="o">);</span> <span class="c1">// Parser datoen (med Apache commons)</span></div><div class="line" id="LC17">			<span class="n">sjekkAtDatoHeaderIkkeErForGammel</span><span class="o">(</span><span class="n">date</span><span class="o">);</span> <span class="c1">// Kast feil om den er for gammel</span></div><div class="line" id="LC18">			<span class="n">sjekkAtDatoHeaderIkkeErForNy</span><span class="o">(</span><span class="n">date</span><span class="o">);</span> <span class="c1">// Kast feil om den er for ny</span></div><div class="line" id="LC19">		<span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">DateParseException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span></div><div class="line" id="LC20">			<span class="c1">// Kast feil - dato ikke parsebar</span></div><div class="line" id="LC21">		<span class="o">}</span></div><div class="line" id="LC22">	<span class="o">}</span></div><div class="line" id="LC23"><span class="o">}</span></div></pre></div>
+
+	          </div>
+
+	          <div class="gist-meta">
+	            <a href="https://gist.github.com/raw/1193046/588cbb72f31c0cde37680c556d3ebd4c0d1abc9c/gistfile1.java" style="float:right;">view raw</a>
+	            <a href="https://gist.github.com/1193046#file_gistfile1.java" style="float:right;margin-right:10px;color:#666">gistfile1.java</a>
+	            <a href="https://gist.github.com/1193046">This Gist</a> brought to you by <a href="http://github.com/">GitHub</a>.
+	          </div>
+	        </div>
+
+
+
+	</div>
+	<p></p>
+	<h2>Content-MD5-filteret</h2>
+	<p>Content-MD5-filterets jobb er å sjekke at Content-MD5-headeren stemmer overens med forespørselens payload. Content-MD5 er en enkel sjekksum-standard, som rett og slett tar hele payload’en og gjør en MD5-hashing av denne. Derfor gjør vi akkurat det samme i vårt filter: vi får tak i hele bytestreamen til innholdet, og kjører dette gjennom MD5. Denne digest’en sammenligner vi så med det klienten har satt som header. Legg igjen merke til at dette i seg selv ikke gjør noe for sikkerheten, det er kun i kombinasjon med det siste filteret at dette øker sikkerheten.</p>
+	<p><script src="./index_files/1193067.js"></script><link rel="stylesheet" href="https://gist.github.com/stylesheets/gist/embed.css"></p><div id="gist-1193067" class="gist">
+
+
+
+
+
+
+
+	        <div class="gist-file">
+	          <div class="gist-data gist-syntax">
+
+
+
+	              <div class="gist-highlight"><pre><div class="line" id="LC1"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">ContentMD5VerifikasjonsFilter</span> <span class="kd">implements</span> <span class="n">ContainerRequestFilter</span> <span class="o">{</span></div><div class="line" id="LC2">	<span class="nd">@Override</span></div><div class="line" id="LC3">	<span class="kd">public</span> <span class="n">ContainerRequest</span> <span class="nf">filter</span><span class="o">(</span><span class="kd">final</span> <span class="n">ContainerRequest</span> <span class="n">request</span><span class="o">)</span> <span class="o">{</span></div><div class="line" id="LC4">		<span class="k">try</span> <span class="o">{</span></div><div class="line" id="LC5">			<span class="c1">// Henter ut alle bytes fra requesten (payload)</span></div><div class="line" id="LC6">			<span class="kt">byte</span><span class="o">[]</span> <span class="n">entityBytes</span> <span class="o">=</span> <span class="n">IOUtils</span><span class="o">.</span><span class="na">toByteArray</span><span class="o">(</span><span class="n">request</span><span class="o">.</span><span class="na">getEntityInputStream</span><span class="o">());</span> <span class="c1">// Apache commons</span></div><div class="line" id="LC7"><br></div><div class="line" id="LC8">			<span class="c1">// Sjekker bare Content-MD5 dersom det er en request med payload</span></div><div class="line" id="LC9">			<span class="k">if</span> <span class="o">(</span><span class="n">entityBytes</span><span class="o">.</span><span class="na">length</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span></div><div class="line" id="LC10">				<span class="n">String</span> <span class="n">contentMD5Client</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="na">getHeaderValue</span><span class="o">(</span><span class="s">"Content-MD5"</span><span class="o">);</span></div><div class="line" id="LC11"><br></div><div class="line" id="LC12">				<span class="c1">// sjekk at Content-MD5-headeren er satt</span></div><div class="line" id="LC13">				<span class="k">if</span> <span class="o">(</span><span class="n">contentMD5Client</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span></div><div class="line" id="LC14">					<span class="c1">// Kast feil</span></div><div class="line" id="LC15">				<span class="o">}</span></div><div class="line" id="LC16"><br></div><div class="line" id="LC17">				<span class="c1">// Sjekk at ContentMD5 stemmer</span></div><div class="line" id="LC18">				<span class="n">validateContentMD5Match</span><span class="o">(</span><span class="n">contentMD5Client</span><span class="o">,</span> <span class="n">entityBytes</span><span class="o">);</span> </div><div class="line" id="LC19">			<span class="o">}</span></div><div class="line" id="LC20"><br></div><div class="line" id="LC21">			<span class="c1">// Gir tilbake en ny InputStream med samme innhold til requesten</span></div><div class="line" id="LC22">			<span class="n">request</span><span class="o">.</span><span class="na">setEntityInputStream</span><span class="o">(</span><span class="k">new</span> <span class="n">ByteArrayInputStream</span><span class="o">(</span><span class="n">entityBytes</span><span class="o">));</span></div><div class="line" id="LC23">			<span class="k">return</span> <span class="n">request</span><span class="o">;</span></div><div class="line" id="LC24"><br></div><div class="line" id="LC25">		<span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">IOException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span></div><div class="line" id="LC26">			<span class="c1">// Kast feil</span></div><div class="line" id="LC27">		<span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">NoSuchAlgorithmException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span></div><div class="line" id="LC28">			<span class="c1">// Kast feil</span></div><div class="line" id="LC29">		<span class="o">}</span></div><div class="line" id="LC30">	<span class="o">}</span></div><div class="line" id="LC31"><br></div><div class="line" id="LC32">	<span class="kd">private</span> <span class="kt">void</span> <span class="nf">validateContentMD5Match</span><span class="o">(</span><span class="kd">final</span> <span class="n">String</span> <span class="n">contentMD5Client</span><span class="o">,</span> <span class="kd">final</span> <span class="kt">byte</span><span class="o">[]</span> <span class="n">entityBytes</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">NoSuchAlgorithmException</span> <span class="o">{</span></div><div class="line" id="LC33">		<span class="c1">// Lager vår egen Content-MD5 (sjekksum) fra requestens payload</span></div><div class="line" id="LC34">		<span class="n">MessageDigest</span> <span class="n">digest</span> <span class="o">=</span> <span class="n">MessageDigest</span><span class="o">.</span><span class="na">getInstance</span><span class="o">(</span><span class="s">"MD5"</span><span class="o">);</span></div><div class="line" id="LC35">		<span class="n">String</span> <span class="n">contentMD5Server</span> <span class="o">=</span> <span class="k">new</span> <span class="n">String</span><span class="o">(</span><span class="n">Base64</span><span class="o">.</span><span class="na">encodeBase64</span><span class="o">(</span><span class="n">digest</span><span class="o">.</span><span class="na">digest</span><span class="o">(</span><span class="n">entityBytes</span><span class="o">)));</span> <span class="c1">// apache commons</span></div><div class="line" id="LC36"><br></div><div class="line" id="LC37">		<span class="c1">// Sjekker at vår sjekksum matcher den i Content-MD5-headeren</span></div><div class="line" id="LC38">		<span class="k">if</span> <span class="o">(!</span><span class="n">contentMD5Client</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="n">contentMD5Server</span><span class="o">))</span> <span class="o">{</span></div><div class="line" id="LC39">			<span class="c1">// Kast feil</span></div><div class="line" id="LC40">		<span class="o">}</span></div><div class="line" id="LC41">	<span class="o">}</span></div><div class="line" id="LC42"><span class="o">}</span></div></pre></div>
+
+	          </div>
+
+	          <div class="gist-meta">
+	            <a href="https://gist.github.com/raw/1193067/aa3861ac36184a944d1bcbbd1065893fe7fa419b/gistfile1.java" style="float:right;">view raw</a>
+	            <a href="https://gist.github.com/1193067#file_gistfile1.java" style="float:right;margin-right:10px;color:#666">gistfile1.java</a>
+	            <a href="https://gist.github.com/1193067">This Gist</a> brought to you by <a href="http://github.com/">GitHub</a>.
+	          </div>
+	        </div>
+
+
+
+	</div>
+	<p></p>
+	<h2>Signatur-filteret</h2>
+	<p>Nå har vi kommet til hoved-filteret – filteret som gjør all den spennende jobben. Her skal vi gjøre følgende ting:</p>
+	<ol>
+	<li>Hente ut headeren som sier hvem brukeren gir seg ut for å være
+	</li><li>Hente ut denne brukerens offentlige nøkkel (eller sertifikat) fra vår database
+	</li><li>Sjekke revokering på sertifikatet (hvis du ønsker det)
+	</li><li>Generere den kanoniske strengen som definerer hele requesten, og er den samme som brukeren på sin side har brukt for å lage signaturen (les mer om dette i forrige del)
+	</li><li>Hente ut signaturen brukeren har lagt på requesten fra headeren
+	</li><li>Sjekke at signaturen matcher brukerens sertifikat i kombinasjon med den kanoniske strengen
+	</li></ol>
+	<p>Dette er en hel del kode – å vise fullt ut fungerende kode for alt dette blir rett og slett ikke mulig. Det kreves her en god del integrasjon med resten av dine systemer. Det er også her en rekke måter å gjøre f.eks signatursjekken på. Vi benytter oss av <a href="http://www.bouncycastle.org/">BouncyCastle</a>, men det finnes flere andre biblioteker man kan bruke. </p>
+	<p>Koden under bør du heller se på som en slags “pseudokode” som viser deg hvilke steg som må gjøres for å verifisere signaturen:</p>
+	<p><script src="./index_files/1193089.js"></script><link rel="stylesheet" href="https://gist.github.com/stylesheets/gist/embed.css"></p><div id="gist-1193089" class="gist">
+
+
+
+
+
+
+
+	        <div class="gist-file">
+	          <div class="gist-data gist-syntax">
+
+
+
+	              <div class="gist-highlight"><pre><div class="line" id="LC1"><span class="nd">@Component</span></div><div class="line" id="LC2"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">SignatureVerifikasjonsFilter</span> <span class="kd">implements</span> <span class="n">ContainerRequestFilter</span> <span class="o">{</span></div><div class="line" id="LC3"><br></div><div class="line" id="LC4">	<span class="nd">@Override</span></div><div class="line" id="LC5">	<span class="kd">public</span> <span class="n">ContainerRequest</span> <span class="nf">filter</span><span class="o">(</span><span class="kd">final</span> <span class="n">ContainerRequest</span> <span class="n">request</span><span class="o">)</span> <span class="o">{</span></div><div class="line" id="LC6"><br></div><div class="line" id="LC7">		<span class="c1">// Henter ut id'en brukeren utgir seg for å være</span></div><div class="line" id="LC8">		<span class="n">String</span> <span class="n">userIdHeader</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="na">getHeaderValue</span><span class="s">"X-Vendor-Userid"</span><span class="o">);</span></div><div class="line" id="LC9"><br></div><div class="line" id="LC10">		<span class="c1">// Henter ut Bruker-objektet</span></div><div class="line" id="LC11">		<span class="n">User</span> <span class="n">user</span> <span class="o">=</span> <span class="n">getUserFromId</span><span class="o">(</span><span class="n">userIdHeader</span><span class="o">);</span></div><div class="line" id="LC12"><br></div><div class="line" id="LC13">		<span class="c1">// Henter ut sertifikatet til brukeren</span></div><div class="line" id="LC14">		<span class="n">Sertifikat</span> <span class="n">sertifikat</span> <span class="o">=</span> <span class="n">user</span><span class="o">.</span><span class="na">getSertifikat</span><span class="o">();</span></div><div class="line" id="LC15"><br></div><div class="line" id="LC16">		<span class="c1">// Sjekk evt. revokering av sertifikatet</span></div><div class="line" id="LC17">		<span class="n">sertifikat</span><span class="o">.</span><span class="na">sjekkRevokering</span><span class="o">();</span></div><div class="line" id="LC18"><br></div><div class="line" id="LC19">		<span class="c1">// Generer kanonisk streng som skulle vært signert</span></div><div class="line" id="LC20">		<span class="n">String</span> <span class="n">stringToSign</span> <span class="o">=</span> <span class="n">genererKanoniskStreng</span><span class="o">(</span><span class="n">request</span><span class="o">);</span></div><div class="line" id="LC21"><br></div><div class="line" id="LC22">		<span class="c1">// Hent ut signatur fra header</span></div><div class="line" id="LC23">		<span class="n">String</span> <span class="n">signatur</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="na">getHeaderValue</span><span class="s">"X-Vendor-Signature"</span><span class="o">);</span></div><div class="line" id="LC24"><br></div><div class="line" id="LC25">		<span class="c1">// Sjekker at signaturen er gyldig</span></div><div class="line" id="LC26">		<span class="kt">boolean</span> <span class="n">verifisert</span> <span class="o">=</span> <span class="n">sertifikat</span><span class="o">.</span><span class="na">verifiserSignatur</span><span class="o">(</span><span class="n">stringToSign</span><span class="o">,</span> <span class="n">Base64</span><span class="o">.</span><span class="na">decodeBase64</span><span class="o">(</span><span class="n">signatur</span><span class="o">.</span><span class="na">getBytes</span><span class="o">()));</span></div><div class="line" id="LC27"><br></div><div class="line" id="LC28">		<span class="k">if</span> <span class="o">(!</span><span class="n">verifisert</span><span class="o">)</span> <span class="o">{</span></div><div class="line" id="LC29">			<span class="c1">// Kast Exception - signaturverifikasjon feilet!</span></div><div class="line" id="LC30">		<span class="o">}</span></div><div class="line" id="LC31"><br></div><div class="line" id="LC32">		<span class="c1">// Dersom vi kommer hit, så er signaturen verifisert</span></div><div class="line" id="LC33">		<span class="c1">// Vi trenger derfor ikke tenke noe mer på dette i koden ellers!</span></div><div class="line" id="LC34">		<span class="k">return</span> <span class="n">request</span><span class="o">;</span></div><div class="line" id="LC35">	<span class="o">}</span></div><div class="line" id="LC36"><br></div><div class="line" id="LC37"><span class="o">}</span></div></pre></div>
+
+	          </div>
+
+	          <div class="gist-meta">
+	            <a href="https://gist.github.com/raw/1193089/46d3177140c176b460ede1c1ebee4ddb607c645f/gistfile1.java" style="float:right;">view raw</a>
+	            <a href="https://gist.github.com/1193089#file_gistfile1.java" style="float:right;margin-right:10px;color:#666">gistfile1.java</a>
+	            <a href="https://gist.github.com/1193089">This Gist</a> brought to you by <a href="http://github.com/">GitHub</a>.
+	          </div>
+	        </div>
+
+
+
+	</div>
+	<p></p>
+	<p>Når dette filteret er kjørt igjennom, så vil kontrollen overlates til den ressursen requesten egentlig går mot. Det lekre med hele denne implementasjonen er at når du først har fått sikkerhetsmekanismen på plass, så slipper du å tenke på denne i resten av koden din. Koden for de enkelte ressursene i REST-API’et vil se helt normal ut, så utviklerene på prosjektet trenger ikke å ha dybdekunnskap om sikkerhetsmekanismen for å arbeide med REST-API’et – de kan kode som om det ikke var noen sikkerhetsmekanisme der, og så kommer det bare automatisk. (Hvorvidt det er LURT at de ikke har kunnskap om det er derimot et helt annet spørsmål..)</p>
+	<h1>Oppsummering</h1>
+	<p>Vi har nå en fullt ut fungerende sikkerhetsløsning for REST-API’er, som ikke ligger i veien for utviklingen og ikke ødelegger for noen av fordelene med en RESTful arkitektur. </p>
+	<p>Løsningen som er forklart i denne bloggposten bør enkelt la seg implementere i de fleste programmeringsspråk og de fleste rammeverk – at vi brukte Jersey som eksempel er kun fordi det er “drittøft” <img src="./index_files/icon_wink.gif" alt=";)" class="wp-smiley">  Hva du velger å bruke er helt opp til deg!</p>
+	<p>Dersom du vil lese mer om ideene som er beskrevet i denne bloggposten, så anbefaler jeg deg å ta en titt på dokumentasjonen til Digipost sitt REST-API, siden hovedarbeidet med denne sikkerhetsmekanismen er gjort som en del av det prosjektet. Du finner dokumentasjonen på <a href="https://api.digipost.no/">api.digipost.no</a>. Les spesielt dokumentasjonen som er dedikert til <a href="https://api.digipost.no/documentation/sikkerhet">sikkerhetsmekanismen</a>.</p>
+	<p>Happy coding! <img src="./index_files/icon_smile.gif" alt=":)" class="wp-smiley"> </p>
+	<p><strong>Update:</strong><br>
+	Jeg snakket om dette på JavaZone 2011, du kan se foredraget her:<br>
+
+					</div>
+					<div class="entry-meta">
+						<img alt="" src="./index_files/b4ee5281df239339ed7e63a8dd2be69c" class="photo avatar avatar-60 photo" height="60" width="60">
+						Denne posten er skrevet av <a class="url fn n" href="http://open.bekk.no/author/espen-halvorsen/" title="Vis alle innlegg av Espen Herseth Halvorsen">Espen Herseth Halvorsen</a> og lagt ut <abbr class="published" title="2011-09-09T06:48:03+0100">09/09/2011</abbr><br> Kategori  <a href="http://open.bekk.no/category/bekk/" title="View all posts in BEKK" rel="category tag">BEKK</a>.<!--
+						<a class="comment-link" href="#respond" title="Post a comment">Post a comment</a> or leave a trackback: <a class="trackback-link" href="http://open.bekk.no/sikker-rest/trackback/" title="Trackback URL for your post" rel="trackback">Trackback URL</a>.
+	-->
+
+
+					</div>
+				</div><!-- .post -->
+
+				<div id="nav-below" class="navigation">
+					<div class="nav-previous"><a href="http://open.bekk.no/kryssplattformutvikling-i-net-i-praksis-om-mobilutvikling-fra-ndc-2011/" rel="prev"><span class="meta-nav">«</span> Kryssplattformutvikling i .NET i praksis: om mobilutvikling fra NDC 2011</a></div>
+					<div class="nav-next"><a href="http://open.bekk.no/keeping-your-maven-build-fast/" rel="next">Keeping your Maven build fast <span class="meta-nav">»</span></a></div>
+				</div>
+
+
+	<div id="disqus_thread"><div id="dsq-content" style="display: block; " class="clearfix">      <div id="dsq-global-toolbar" class="dsq-clearfix">        <ul class="dsq-global-toolbar-right dsq-clearfix">                    <li class="dsq-community-box">                <a href="http://open.bekk.no/sikker-rest/#" class="dsq-toolbar-item dsq-tt" onclick="DISQUS.dtpl.actions.fire(&#39;community.show&#39;); return false" title="Utvid community-boksen"><span class="dsq-toolbar-icon"></span></a>            </li>                            <li class="dsq-global-toolbar-dropdown-container">                    <div id="dsq-toolbar-dropdown">    <a href="http://open.bekk.no/sikker-rest/#" onclick="return false" class="dsq-toolbar-logo dsq-toolbar-item dsq-clearfix"><span class="dsq-toolbar-icon">Disqus</span></a>    <div id="dsq-toolbar-dropdown-wrap" style="display: none">      <ul class="dsq-clearfix">                    <li class="dsq-login-link"><a href="http://open.bekk.no/sikker-rest/#" onclick="DISQUS.dtpl.actions.fire(&#39;auth.login&#39;); return false"><span class="dsq-toolbar-icon"></span><span class="dsq-toolbar-label">Logg inn</span></a></li>                    <li class="dsq-about-link"><a href="http://disqus.com/" target="_blank"><span class="dsq-toolbar-icon"></span><span class="dsq-toolbar-label">Om Disqus</span></a></li>      </ul>    </div>  </div>            </li>        </ul>                <ul class="dsq-global-toolbar-left dsq-clearfix">            <li class="dsq-like-thread">                <a href="http://open.bekk.no/sikker-rest/#" id="dsq-like-thread-button" class="dsq-toolbar-item dsq-clearfix  dsq-tt" onclick="DISQUS.dtpl.actions.fire(&#39;thread.vote&#39;, 1); return false;" title="Jeg liker denne siden">                    <span class="dsq-toolbar-icon"></span>                    <span class="dsq-toolbar-label">Liker</span>                </a>            </li>            <li class="dsq-dislike-thread">                <a href="http://open.bekk.no/sikker-rest/#" id="dsq-dislike-thread-button" class="dsq-toolbar-item dsq-clearfix  dsq-tt" onclick="DISQUS.dtpl.actions.fire(&#39;thread.vote&#39;, -1); return false" title="Jeg liker ikke denne siden">                    <span class="dsq-toolbar-icon">Liker ikke</span>                </a>            </li>            <li class="dsq-like-panel">                <ul class="dsq-like-faces dsq-clearfix">                          <li class="dsq-tt" title="pointnor"><a href="http://disqus.com/pointnor/" onclick="return DISQUS.dtpl.actions.fire(&#39;profile.show&#39;, null, &#39;pointnor&#39;, false); return false"><img src="./index_files/noavatar32.png"></a></li>    <li class="dsq-like-activity">                  og 4 others likte dette.          </li>                </ul>            </li>        </ul>            </div>    <div id="dsq-like-tooltip">      <div id="dsq-share-step-1" class="dsq-share-step">        <h3>Fint at du likte det. Vil du dele med andre?</h3>        <p class="dsq-tooltip-checkbox"><input type="checkbox" id="dsq-share-thread-facebook" value="Facebook"><label for="dsq-share-thread-facebook"><span class="dsq-facebook">Facebook</span></label></p>        <p class="dsq-tooltip-checkbox"><input type="checkbox" id="dsq-share-thread-twitter" value="Twitter"><label for="dsq-share-thread-twitter"><span class="dsq-twitter">Twitter</span></label></p>        <ul id="dsq-tooltip-actions">                        <li><a href="http://open.bekk.no/sikker-rest/#" onclick="DISQUS.dtpl.actions.fire(&#39;thread.share&#39;); return false" class="dsq-primary-action">Del</a></li>                    <li><a href="http://open.bekk.no/sikker-rest/#" onclick="DISQUS.dtpl.actions.fire(&#39;thread.share.cancel&#39;); return false" class="dsq-secondary-action">Nei takk</a></li>        </ul>      </div>      <div id="dsq-share-step-2" class="dsq-share-step" style="display:none !important">        <p>Deler denne siden …</p>      </div>      <div id="dsq-share-step-3" class="dsq-share-step" style="display:none !important">        <p>Takk! <a href="http://open.bekk.no/sikker-rest/#" class="dsq-tooltip-decline" onclick="DISQUS.dtpl.actions.fire(&#39;thread.share.cancel&#39;); return false">Close</a></p>      </div>    </div>                <div id="dsq-comments-title">    <h3>                        Viser <span id="dsq-num-posts">én</span> kommentar                  </h3>  </div>  <div class="dsq-options">      <span class="dsq-item-sort">    Sorter etter    <select id="dsq-sort-select" onchange="DISQUS.dtpl.actions.fire(&#39;thread.sort&#39;, this.value);">            <option value="hot">Populært nå</option>            <option value="best">Beste rating</option>            <option value="newest">Nyeste først</option>            <option value="oldest" selected="selected">Eldste først</option>          </select>  </span>      <span class="dsq-subscribe-email">    <img src="./index_files/email.png" alt="">&nbsp;    <span id="dsq-subscribe">            <a href="http://open.bekk.no/sikker-rest/#" onclick="return DISQUS.dtpl.actions.fire(&#39;thread.subscribe&#39;);">Abonner via e-post</a>          </span>    <span class="dsq-subscribe-rss">      <img src="./index_files/bullet-feed.png" alt="">&nbsp;      <a href="http://bekkopen.disqus.com/hvordan_designe_et_sikkert_rest_api/latest.rss">Abonner via RSS</a>    </span>  </span>  </div>          <ul id="dsq-comments">            <div id="comment-306287837"></div><li id="dsq-comment-306287837" style="margin-left:0px;" class="dsq-comment     dsq-even ">  <!-- placeholder for collapsed comment block (inserted dynamically later) -->  <div id="dsq-collapsed-comment-306287837" class="dsq-collapsed-comment"></div>  <div class="dsq-full-comment"> <!-- wraps header, body, footer -->    <div id="dsq-comment-header-306287837" class="dsq-comment-header">      <table>        <tbody><tr>          <td id="dsq-header-avatar-306287837" class="dsq-header-avatar">            <a id="dsq-avatar-306287837" class="dsq-avatar dsq-tt" title="Vis profilen til Jonas Follesø" href="http://disqus.com/twitter-10209472/" onclick="return DISQUS.dtpl.actions.fire(&#39;profile.show&#39;, 306287837, null);">                            <img src="./index_files/noavatar32(1).png" class="dsq-deferred-avatar" data-src="http://mediacdn.disqus.com/uploads/users/833/4473/avatar32.jpg?1315607983" alt="" width="32" height="32">                          </a>          </td>          <td class="dsq-comment-header-meta">            <div class="dsq-comment-header-meta-wrapper">              <cite id="dsq-cite-306287837" class="dsq-comment-cite">                                <a id="dsq-author-user-306287837" href="http://twitter.com/follesoe" target="_blank" rel="nofollow">Jonas Follesø</a>                                              </cite>              <img src="./index_files/moderator.png" class="dsq-moderator-star" title="Moderator" width="15" height="14">              <span class="dsq-comment-header-time">                <a href="http://open.bekk.no/sikker-rest/#comment-306287837" onclick="DISQUS.dtpl.actions.fire(&#39;comments.permalink&#39;,306287837);" title="Lenke til kommentar fra Jonas Follesø">3 dager siden</a>              </span>              <a class="dsq-comment-hide-thread" href="http://open.bekk.no/sikker-rest/#" onclick="return DISQUS.dtpl.actions.fire(&#39;comments.collapse&#39;, this, 306287837);" title="Klapp sammen tråd"></a>            </div>          </td>        </tr>      </tbody></table>    </div>    <div id="dsq-comment-body-306287837" class="dsq-comment-body">        <div class="dsq-comment-message" id="dsq-comment-message-306287837">                <div class="dsq-comment-text" id="dsq-comment-text-306287837">        Lekker blog post. Det ille ekstra med bilder før hvert avsnitt gjør seg veldig bra!<br><br>Har ikke lest hele, men dette er superrelevant, så skal lese den grundig :)      </div>                        </div>          </div>    <div class="dsq-comment-footer" id="dsq-comment-footer-306287837">      <div class="dsq-comment-footer-left">                    <a href="http://open.bekk.no/sikker-rest/#" id="dsq-post-report-306287837" class="dsq-post-report" onclick="return DISQUS.dtpl.actions.fire(&#39;comments.report&#39;, 306287837, false);">Rapporter</a>              </div>            <div class="dsq-comment-footer-right">                <span class="dsq-comment-buttons">                    <span id="dsq-like-306287837" class="dsq-like">            <button type="button" class="dsq-button-small " data-vote="0" onclick="DISQUS.dtpl.actions.fire(&#39;comments.like&#39;, this, 306287837);">                        Liker            </button>          </span>                                        <span class="dsq-comment-footer-reply" id="dsq-comment-footer-reply-306287837" onclick="DISQUS.dtpl.actions.fire(&#39;comments.reply&#39;, 306287837, this);">            <button type="button" class="dsq-button-small">Svar</button>            <button type="button" class="dsq-comment-footer-reply-tab">Svar</button>            <span></span>          </span>                  </span>      </div> <!-- /comment-footer-right -->          </div> <!-- /comment-footer -->  </div> <!-- dsq-full-comment --></li><div id="dsq-append-post-306287837"></div>      </ul>        <div id="dsq-pagination" class="dsq-pagination">        </div>                    <div id="dsq-new-post" class="dsq-post-area dsq-unauthenticated">          <h3>Legg til ny kommentar</h3>      <div style="clear:both"></div>                    <div id="dsq-authenticate" class="dsq-authenticate">    <p class="dsq-autheneticate-copy">                          Valgfritt: Logg inn under.          </p>    <ul class="dsq-login-buttons">                                    <li class="dsq-login-button dsq-login-button-disqus">              <a href="http://open.bekk.no/sikker-rest/#" title="Login with Disqus" onclick="return DISQUS.dtpl.actions.fire(&#39;auth.disqus&#39;);"></a>            </li>                                                                    <li class="dsq-login-button dsq-login-button-twitter">              <a href="http://open.bekk.no/sikker-rest/#" title="Login with Twitter" onclick="return DISQUS.dtpl.actions.fire(&#39;auth.twitter&#39;);"></a>            </li>                                                                    <li class="dsq-login-button dsq-login-button-openid">              <a href="http://open.bekk.no/sikker-rest/#" title="Login with Openid" onclick="return DISQUS.dtpl.actions.fire(&#39;auth.openid&#39;);"></a>            </li>                                            <li style="clear:both"></li>    </ul>  </div>        <div id="dsq-form-area">      <div class="dsq-textarea">        <div class="dsq-textarea-wrapper" id="dsq-textarea-wrapper" style="height: auto; ">            <!-- filled dynamically -->        <iframe name="easyXDM_DISQUS_net_default5138_provider" id="easyXDM_DISQUS_net_default5138_provider" scrolling="no" frameborder="0" src="./index_files/reply.html" style="position: relative; top: 0px; height: 58px; "></iframe></div>      </div>              <div id="dsq-media-preview" class="dsq-media-preview" style="display:none">        </div>                  <div class="dsq-post-footer">              <div class="dsq-attach-media">            <div class="dsq-attach-media-container">                <span>Bilde</span>                <!-- filled dynamically -->            <iframe name="easyXDM_DISQUS_net_default5139_provider" id="easyXDM_DISQUS_net_default5139_provider" scrolling="no" frameborder="0" src="./index_files/upload.html"></iframe></div>        </div>                                    <button type="button" class="dsq-button" id="dsq-post-button" onclick="DISQUS.dtpl.actions.fire(&#39;comments.validate&#39;, null);">            <span>              Kommenter som …            </span>          </button>                      </div>      <div style="clear:both"></div>    </div>  </div>              <h3 class="dsq-h3-reactions">Reaksjoner</h3>    <ul id="dsq-reactions" class="dsq-reactions">              <li class="dsq-comment dsq-reaction" id="dsq-reaction-65379722">  <div class="dsq-comment-header">    <table>      <tbody><tr>        <td class="dsq-header-avatar">                    <a target="_blank" href="http://open.bekk.no/sikker-rest/#" class="dsq-avatar">                              <img src="./index_files/Christopher_normal.jpg">                              </a>                  </td>        <td>          <cite class="dsq-comment-cite">Christopher Røtnes</cite>          <span class="dsq-comment-header-time">4 dager siden</span>        </td>        <td class="dsq-comment-header-likes"></td>      </tr>    </tbody></table>  </div>  <div class="dsq-reaction-header">    <table>      <tbody><tr>        <td class="dsq-reaction-header-left">          <img class="dsq-service-icon" src="./index_files/twitter.png">&nbsp;          Fra&nbsp;          <a class="dsq-service-name" target="_blank" href="http://twitter.com/crotnes/status/112146854950608896">            twitter          </a>        </td>        <td class="dsq-reaction-header-right">                                    3 flere retweets fra              <span class="dsq-reaction-retweets-65379722">                                <a href="http://twitter.com/follesoe/status/112133878554169344">Jonas Follesø</a>&nbsp;                                <a href="http://twitter.com/hnilsen/status/112077718849458176">Håkon Nilsen</a>&nbsp;                                <a href="http://twitter.com/MagnusRevang/status/112075699749261312">Magnus Revang</a>&nbsp;                              </span>                                            </td>      </tr>    </tbody></table>  </div>  <div class="dsq-comment-body">    <div class="dsq-comment-message">RT @Espenhh: Har skrevet en ny bloggpost på Bekk Open: "Design av sikkert REST-API": http://t.co/RPqGhU3 (var grunnlaget for #javazone-t ...</div>  </div>  <div class="dsq-comment-footer">    <div class="dsq-comment-footer-left"></div>      </div></li>              <li class="dsq-comment dsq-reaction" id="dsq-reaction-65359441">  <div class="dsq-comment-header">    <table>      <tbody><tr>        <td class="dsq-header-avatar">                    <a target="_blank" href="http://open.bekk.no/sikker-rest/#" class="dsq-avatar">                              <img src="./index_files/oyvind_normal.jpg">                              </a>                  </td>        <td>          <cite class="dsq-comment-cite">Øyvind Malin</cite>          <span class="dsq-comment-header-time">4 dager siden</span>        </td>        <td class="dsq-comment-header-likes"></td>      </tr>    </tbody></table>  </div>  <div class="dsq-reaction-header">    <table>      <tbody><tr>        <td class="dsq-reaction-header-left">          <img class="dsq-service-icon" src="./index_files/twitter.png">&nbsp;          Fra&nbsp;          <a class="dsq-service-name" target="_blank" href="http://twitter.com/oyvindmal/status/112104266642096128">            twitter          </a>        </td>        <td class="dsq-reaction-header-right">                                        </td>      </tr>    </tbody></table>  </div>  <div class="dsq-comment-body">    <div class="dsq-comment-message">RT @jonfageraas: RT @bekkopen: Ny artikkel på BEKK Open: "Design av sikkert REST-API": http://t.co/fNAh1ej (basert på en av BEKKs lyntal ...</div>  </div>  <div class="dsq-comment-footer">    <div class="dsq-comment-footer-left"></div>      </div></li>              <li class="dsq-comment dsq-reaction" id="dsq-reaction-65359166">  <div class="dsq-comment-header">    <table>      <tbody><tr>        <td class="dsq-header-avatar">                    <a target="_blank" href="http://open.bekk.no/sikker-rest/#" class="dsq-avatar">                              <img src="./index_files/Jon_Fageraas_august_09_normal.jpg">                              </a>                  </td>        <td>          <cite class="dsq-comment-cite">Jon Fageraas</cite>          <span class="dsq-comment-header-time">4 dager siden</span>        </td>        <td class="dsq-comment-header-likes"></td>      </tr>    </tbody></table>  </div>  <div class="dsq-reaction-header">    <table>      <tbody><tr>        <td class="dsq-reaction-header-left">          <img class="dsq-service-icon" src="./index_files/twitter.png">&nbsp;          Fra&nbsp;          <a class="dsq-service-name" target="_blank" href="http://twitter.com/jonfageraas/status/112103463839727617">            twitter          </a>        </td>        <td class="dsq-reaction-header-right">                                        </td>      </tr>    </tbody></table>  </div>  <div class="dsq-comment-body">    <div class="dsq-comment-message">RT @bekkopen: Ny artikkel på BEKK Open: "Design av sikkert REST-API": http://t.co/fNAh1ej (basert på en av BEKKs lyntaler på #JavaZone 2011)</div>  </div>  <div class="dsq-comment-footer">    <div class="dsq-comment-footer-left"></div>      </div></li>              <li class="dsq-comment dsq-reaction" id="dsq-reaction-65354902">  <div class="dsq-comment-header">    <table>      <tbody><tr>        <td class="dsq-header-avatar">                    <a target="_blank" href="http://open.bekk.no/sikker-rest/#" class="dsq-avatar">                              <img src="./index_files/Mikkel_normal.jpg">                              </a>                  </td>        <td>          <cite class="dsq-comment-cite">Mikkel Dan-Rognlie</cite>          <span class="dsq-comment-header-time">4 dager siden</span>        </td>        <td class="dsq-comment-header-likes"></td>      </tr>    </tbody></table>  </div>  <div class="dsq-reaction-header">    <table>      <tbody><tr>        <td class="dsq-reaction-header-left">          <img class="dsq-service-icon" src="./index_files/twitter.png">&nbsp;          Fra&nbsp;          <a class="dsq-service-name" target="_blank" href="http://twitter.com/mikkelbd/status/112094623962378240">            twitter          </a>        </td>        <td class="dsq-reaction-header-right">                                        </td>      </tr>    </tbody></table>  </div>  <div class="dsq-comment-body">    <div class="dsq-comment-message">RT @bekkopen: Ny artikkel på BEKK Open: "Design av sikkert REST-API": http://t.co/Ubbbdo5 (basert på en av BEKKs lyntaler på #JavaZone 2011)</div>  </div>  <div class="dsq-comment-footer">    <div class="dsq-comment-footer-left"></div>      </div></li>              <li class="dsq-comment dsq-reaction" id="dsq-reaction-65344799">  <div class="dsq-comment-header">    <table>      <tbody><tr>        <td class="dsq-header-avatar">                    <a target="_blank" href="http://open.bekk.no/sikker-rest/#" class="dsq-avatar">                              <img src="./index_files/jhs_normal.png">                              </a>                  </td>        <td>          <cite class="dsq-comment-cite">joachimhs</cite>          <span class="dsq-comment-header-time">4 dager siden</span>        </td>        <td class="dsq-comment-header-likes"></td>      </tr>    </tbody></table>  </div>  <div class="dsq-reaction-header">    <table>      <tbody><tr>        <td class="dsq-reaction-header-left">          <img class="dsq-service-icon" src="./index_files/twitter.png">&nbsp;          Fra&nbsp;          <a class="dsq-service-name" target="_blank" href="http://twitter.com/joachimhs/status/112057424831193088">            twitter          </a>        </td>        <td class="dsq-reaction-header-right">                                        </td>      </tr>    </tbody></table>  </div>  <div class="dsq-comment-body">    <div class="dsq-comment-message">RT @steinim: RT @Espenhh Ny bloggpost på Bekk Open: "Design av sikkert REST-API": http://t.co/3CA9UQL (var grunnlaget for #javazone-talken min)</div>  </div>  <div class="dsq-comment-footer">    <div class="dsq-comment-footer-left"></div>      </div></li>              <li class="dsq-comment dsq-reaction" id="dsq-reaction-65344800">  <div class="dsq-comment-header">    <table>      <tbody><tr>        <td class="dsq-header-avatar">                    <a target="_blank" href="http://open.bekk.no/sikker-rest/#" class="dsq-avatar">                              <img src="./index_files/IMG_3301_normal.jpg">                              </a>                  </td>        <td>          <cite class="dsq-comment-cite">olemartin</cite>          <span class="dsq-comment-header-time">4 dager siden</span>        </td>        <td class="dsq-comment-header-likes"></td>      </tr>    </tbody></table>  </div>  <div class="dsq-reaction-header">    <table>      <tbody><tr>        <td class="dsq-reaction-header-left">          <img class="dsq-service-icon" src="./index_files/twitter.png">&nbsp;          Fra&nbsp;          <a class="dsq-service-name" target="_blank" href="http://twitter.com/olemartin/status/112051427773394944">            twitter          </a>        </td>        <td class="dsq-reaction-header-right">                                        </td>      </tr>    </tbody></table>  </div>  <div class="dsq-comment-body">    <div class="dsq-comment-message">RT @Espenhh: Har skrevet en ny bloggpost på Bekk Open: "Design av sikkert REST-API": http://t.co/RPqGhU3 (var grunnlaget for #javazone-talken min)</div>  </div>  <div class="dsq-comment-footer">    <div class="dsq-comment-footer-left"></div>      </div></li>              <li class="dsq-comment dsq-reaction" id="dsq-reaction-65344801">  <div class="dsq-comment-header">    <table>      <tbody><tr>        <td class="dsq-header-avatar">                    <a target="_blank" href="http://open.bekk.no/sikker-rest/#" class="dsq-avatar">                              <img src="./index_files/birdie_normal.jpg">                              </a>                  </td>        <td>          <cite class="dsq-comment-cite">gnab</cite>          <span class="dsq-comment-header-time">4 dager siden</span>        </td>        <td class="dsq-comment-header-likes"></td>      </tr>    </tbody></table>  </div>  <div class="dsq-reaction-header">    <table>      <tbody><tr>        <td class="dsq-reaction-header-left">          <img class="dsq-service-icon" src="./index_files/twitter.png">&nbsp;          Fra&nbsp;          <a class="dsq-service-name" target="_blank" href="http://twitter.com/gnab/status/112048446243999744">            twitter          </a>        </td>        <td class="dsq-reaction-header-right">                                        </td>      </tr>    </tbody></table>  </div>  <div class="dsq-comment-body">    <div class="dsq-comment-message">RT @bekkopen: Ny artikkel på BEKK Open: "Design av sikkert REST-API": http://t.co/Ubbbdo5 (basert på en av BEKKs lyntaler på #JavaZone 2011)</div>  </div>  <div class="dsq-comment-footer">    <div class="dsq-comment-footer-left"></div>      </div></li>                  <li id="dsq-show-more-reactions" class="dsq-show-more-reactions">        <button type="button" class="dsq-button-small" onclick="DISQUS.dtpl.actions.fire(&#39;reactions.loadMore&#39;);">          Vis flere reaksjoner        </button>      </li>          </ul>              <div class="dsq-item-trackback">      Trackback URL&nbsp;<input class="dsq-trackback-url" onclick="this.select();" readonly="true" value="http://open.bekk.no/sikker-rest/trackback/">    </div>      </div><div>  </div></div>
+
+	<script type="text/javascript">
+	/* <![CDATA[ */
+	    var disqus_url = 'http://open.bekk.no/sikker-rest/';
+	    var disqus_identifier = '6313 http://open.bekk.no/?p=6313';
+	    var disqus_container_id = 'disqus_thread';
+	    var disqus_domain = 'disqus.com';
+	    var disqus_shortname = 'bekkopen';
+	    var disqus_title = "Hvordan designe et sikkert REST-API";
+	        var disqus_config = function () {
+	        var config = this; // Access to the config object
+
+	        /* 
+	           All currently supported events:
+	            * preData — fires just before we request for initial data
+	            * preInit - fires after we get initial data but before we load any dependencies
+	            * onInit  - fires when all dependencies are resolved but before dtpl template is rendered
+	            * afterRender - fires when template is rendered but before we show it
+	            * onReady - everything is done
+	         */
+
+	        config.callbacks.preData.push(function() {
+	            // clear out the container (its filled for SEO/legacy purposes)
+	            document.getElementById(disqus_container_id).innerHTML = '';
+	        });
+	                config.callbacks.onReady.push(function() {
+	            // sync comments in the background so we don't block the page
+	            DISQUS.request.get('?cf_action=sync_comments&post_id=6313');
+	        });
+	                    };
+	    var facebookXdReceiverPath = 'http://open.bekk.no/wp-content/plugins/disqus-comment-system/xd_receiver.htm';
+	/* ]]> */
+	</script>
+
+	<script type="text/javascript">
+	/* <![CDATA[ */
+	    var DsqLocal = {
+	        'trackbacks': [
+	        ],
+	        'trackback_url': "http:\/\/open.bekk.no\/sikker-rest\/trackback\/"    };
+	/* ]]> */
+	</script>
+
+	<script type="text/javascript">
+	/* <![CDATA[ */
+	(function() {
+	    var dsq = document.createElement('script'); dsq.type = 'text/javascript';
+	    dsq.async = true;
+	    dsq.src = 'http://' + disqus_shortname + '.' + disqus_domain + '/embed.js?pname=wordpress&pver=2.66';
+	    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+	/* ]]> */
+	</script>
+
+			</div><!-- #content -->
+		</div><!-- #container -->
+
+		<div id="primary" class="sidebar">
+			<ul class="xoxo">
+
+				<li id="search" class="widget widget_search">				
+					<h3 class="widgettitle"><label for="s">Søk</label></h3>
+					<form id="searchform" class="blog-search" method="get" action="http://open.bekk.no/">
+						<div>
+							<input id="s" name="s" type="text" class="text" value="" size="10" tabindex="1">
+							<input type="submit" class="button" value="Søk" tabindex="2">
+						</div>
+					</form>
+
+				</li>
+
+				<li id="tag_cloud-2" class="widget widget_tag_cloud">
+					<h3 class="widgettitle">Tema</h3>
+	<div class="tagcloud"><a href="http://open.bekk.no/tag/net/" class="tag-link-77" title="8 topics" style="font-size: 16.166666666667pt;">.net</a>
+	<a href="http://open.bekk.no/tag/app/" class="tag-link-304" title="3 topics" style="font-size: 8pt;">app</a>
+	<a href="http://open.bekk.no/tag/brukeropplevelse/" class="tag-link-298" title="4 topics" style="font-size: 10.333333333333pt;">brukeropplevelse</a>
+	<a href="http://open.bekk.no/tag/c/" class="tag-link-306" title="4 topics" style="font-size: 10.333333333333pt;">c#</a>
+	<a href="http://open.bekk.no/tag/clojure/" class="tag-link-104" title="4 topics" style="font-size: 10.333333333333pt;">clojure</a>
+	<a href="http://open.bekk.no/tag/cloud/" class="tag-link-352" title="3 topics" style="font-size: 8pt;">cloud</a>
+	<a href="http://open.bekk.no/tag/driftbarhet/" class="tag-link-118" title="4 topics" style="font-size: 10.333333333333pt;">driftbarhet</a>
+	<a href="http://open.bekk.no/tag/facebook/" class="tag-link-50" title="3 topics" style="font-size: 8pt;">Facebook</a>
+	<a href="http://open.bekk.no/tag/feilhandtering/" class="tag-link-117" title="4 topics" style="font-size: 10.333333333333pt;">feilhåndtering</a>
+	<a href="http://open.bekk.no/tag/forretningsmodell/" class="tag-link-211" title="5 topics" style="font-size: 12.2pt;">Forretningsmodell</a>
+	<a href="http://open.bekk.no/tag/forretningsorientert-it/" class="tag-link-225" title="3 topics" style="font-size: 8pt;">forretningsorientert it</a>
+	<a href="http://open.bekk.no/tag/forretningsutvikling/" class="tag-link-194" title="3 topics" style="font-size: 8pt;">forretningsutvikling</a>
+	<a href="http://open.bekk.no/tag/friprog/" class="tag-link-32" title="9 topics" style="font-size: 17.333333333333pt;">friprog</a>
+	<a href="http://open.bekk.no/tag/funksjonalitet-og-brukeropplevelse/" class="tag-link-171" title="10 topics" style="font-size: 18.266666666667pt;">funksjonalitet og brukeropplevelse</a>
+	<a href="http://open.bekk.no/tag/git/" class="tag-link-34" title="4 topics" style="font-size: 10.333333333333pt;">git</a>
+	<a href="http://open.bekk.no/tag/groovy/" class="tag-link-270" title="3 topics" style="font-size: 8pt;">groovy</a>
+	<a href="http://open.bekk.no/tag/innovasjon/" class="tag-link-192" title="6 topics" style="font-size: 13.833333333333pt;">innovasjon</a>
+	<a href="http://open.bekk.no/tag/it-strategi/" class="tag-link-224" title="4 topics" style="font-size: 10.333333333333pt;">it-strategi</a>
+	<a href="http://open.bekk.no/tag/java/" class="tag-link-26" title="15 topics" style="font-size: 22pt;">java</a>
+	<a href="http://open.bekk.no/tag/javascript/" class="tag-link-4" title="3 topics" style="font-size: 8pt;">javascript</a>
+	<a href="http://open.bekk.no/tag/json/" class="tag-link-5" title="3 topics" style="font-size: 8pt;">json</a>
+	<a href="http://open.bekk.no/tag/kanban/" class="tag-link-121" title="4 topics" style="font-size: 10.333333333333pt;">kanban</a>
+	<a href="http://open.bekk.no/tag/konferanse/" class="tag-link-142" title="10 topics" style="font-size: 18.266666666667pt;">konferanse</a>
+	<a href="http://open.bekk.no/tag/kvalitet/" class="tag-link-84" title="9 topics" style="font-size: 17.333333333333pt;">kvalitet</a>
+	<a href="http://open.bekk.no/tag/maven/" class="tag-link-25" title="5 topics" style="font-size: 12.2pt;">maven</a>
+	<a href="http://open.bekk.no/tag/metode/" class="tag-link-172" title="8 topics" style="font-size: 16.166666666667pt;">metode</a>
+	<a href="http://open.bekk.no/tag/metodekort/" class="tag-link-170" title="3 topics" style="font-size: 8pt;">metodekort</a>
+	<a href="http://open.bekk.no/tag/mobil/" class="tag-link-302" title="5 topics" style="font-size: 12.2pt;">mobil</a>
+	<a href="http://open.bekk.no/tag/offentlig/" class="tag-link-41" title="3 topics" style="font-size: 8pt;">offentlig</a>
+	<a href="http://open.bekk.no/tag/openid/" class="tag-link-13" title="3 topics" style="font-size: 8pt;">openid</a>
+	<a href="http://open.bekk.no/tag/ruby/" class="tag-link-74" title="3 topics" style="font-size: 8pt;">ruby</a>
+	<a href="http://open.bekk.no/tag/scala/" class="tag-link-103" title="3 topics" style="font-size: 8pt;">scala</a>
+	<a href="http://open.bekk.no/tag/sikkerhet/" class="tag-link-97" title="11 topics" style="font-size: 19.2pt;">Sikkerhet</a>
+	<a href="http://open.bekk.no/tag/smidig/" class="tag-link-110" title="5 topics" style="font-size: 12.2pt;">smidig</a>
+	<a href="http://open.bekk.no/tag/sosiale-medier/" class="tag-link-174" title="10 topics" style="font-size: 18.266666666667pt;">sosiale medier</a>
+	<a href="http://open.bekk.no/tag/sosiale-nettverk/" class="tag-link-11" title="4 topics" style="font-size: 10.333333333333pt;">sosiale nettverk</a>
+	<a href="http://open.bekk.no/tag/sosial-programvare/" class="tag-link-109" title="7 topics" style="font-size: 15pt;">sosial programvare</a>
+	<a href="http://open.bekk.no/tag/spring/" class="tag-link-89" title="5 topics" style="font-size: 12.2pt;">spring</a>
+	<a href="http://open.bekk.no/tag/strategi/" class="tag-link-193" title="9 topics" style="font-size: 17.333333333333pt;">strategi</a>
+	<a href="http://open.bekk.no/tag/tdd/" class="tag-link-277" title="3 topics" style="font-size: 8pt;">tdd</a>
+	<a href="http://open.bekk.no/tag/testing/" class="tag-link-29" title="4 topics" style="font-size: 10.333333333333pt;">testing</a>
+	<a href="http://open.bekk.no/tag/twitter/" class="tag-link-12" title="5 topics" style="font-size: 12.2pt;">twitter</a>
+	<a href="http://open.bekk.no/tag/ux/" class="tag-link-197" title="3 topics" style="font-size: 8pt;">UX</a>
+	<a href="http://open.bekk.no/tag/virksomhet-2-0/" class="tag-link-173" title="3 topics" style="font-size: 8pt;">Virksomhet 2.0</a>
+	<a href="http://open.bekk.no/tag/xss/" class="tag-link-181" title="4 topics" style="font-size: 10.333333333333pt;">xss</a></div>
+
+				</li>
+			</ul>
+		</div><!-- #primary .sidebar -->
+
+		<div id="secondary" class="sidebar">
+			<ul class="xoxo">
+		<li>
+			<h3>Feeds</h3>
+			<a href="http://open.bekk.no/feed/" title="Open BEKK RSS feed"><img src="./index_files/open-bekk-rss-icon.png" alt="Open BEKK RSS feed"></a>
+			<a href="http://open.bekk.no/feed/atom/" title="Open BEKK Atom feed"><img src="./index_files/open-bekk-atom-icon.png" alt="Open BEKK Atom feed"></a>
+		</li>
+
+
+			</ul>
+		</div><!-- #secondary .sidebar -->
+
+		<div id="footer">
+			<!--
+			<span id="generator-link"><a href="http://wordpress.org/" title="WordPress" rel="generator">WordPress</a></span>
+			<span class="meta-sep">|</span>
+			<span id="theme-link"><a href="http://www.plaintxt.org/themes/sandbox/" title="Sandbox theme for WordPress" rel="designer">Sandbox</a></span>
+			-->
+		</div><!-- #footer -->
+
+	</div><!-- #wrapper .hfeed -->	
+	
+	
+	
+	
+	
+
+<!--header role="banner" class="clearfix">
+<h1>320 and up</h1>
+</header>
+
+<div class="content clearfix">
+
+<div role="main">
+</div>
+
+<div role="complementary">
+</div>
+
+</div>
+
+<footer role="contentinfo" class="clearfix">
+</footer-->
+
+<!-- mathiasbynens.be/notes/async-analytics-snippet Change UA-XXXXX-X to be your site's ID -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
+<script>window.jQuery || document.write('<script src="js/libs/jquery-1.5.1.min.js">\x3C/script>')</script>
+<!-- Scripts -->
+<script src="js/plugins.js"></script>
+<script src="js/script.js"></script>
+
+<!--[if (lt IE 9) & (!IEMobile)]>
+<script src="js/libs/DOMAssistantCompressed-2.8.js"></script>
+<script src="js/libs/selectivizr-1.0.1.js"></script>
+<script src="js/libs/respond.min.js"></script>
+<![endif]-->
+
+<!-- http://t.co/HZe9oJ4 -->
+<script>
+var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']]; // Change UA-XXXXX-X to be your site's ID
+(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+<noscript>Your browser does not support JavaScript!</noscript>
+</body>
+</html>

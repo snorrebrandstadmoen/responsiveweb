@@ -11,7 +11,7 @@ TAGS: bekk, sandbox, microformats, hcard, hatom, xoxo, widgets, blank slate, sta
 */
 
 /* Two-column with sidebar on left from the /examples/ folder  */
-@import url('../bekkSandbox/examples/2c-r.css');
+@import url('2c-r.css');
 
 body {
 	background-image: url(gfx/page_bkg.jpg);
